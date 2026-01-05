@@ -1,0 +1,617 @@
+// .heroSection {
+//   position: relative;
+//   width: 100%;
+//   min-height: 80vh;
+//   background-image: url("/robohand2.jpg"); // your hero image
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   overflow: hidden;
+//   // background: rgb(0,0,0,0.2);
+//   .overlay {
+//   position: absolute;
+//   inset: 0; // covers entire hero section
+//   background: rgba(0, 0, 0, 0.7); // dark overlay, adjust opacity (0.3 - 0.6)
+//   z-index: 1;
+// }
+
+
+//   // Header
+//   .header {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     padding: 20px 60px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     z-index: 10;
+//     transition: all 0.3s ease;
+//     background: transparent;
+
+//     &.white {
+//       background: #fff;
+//       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+//       .nav a {
+//         color: #000;
+//       }
+//       .logo {
+//         color: #000;
+//       }
+//     }
+
+//     .logo {
+//       font-weight: 700;
+//       font-size: 1.5rem;
+//       color: #fff;
+//       transition: color 0.3s;
+//     }
+
+//     .nav {
+//       display: flex;
+//       gap: 30px;
+
+//       a {
+//         text-decoration: none;
+//         color: #fff;
+//         font-weight: 500;
+//         transition: color 0.3s;
+
+//         &:hover {
+//           color: #53be80;
+//         }
+//       }
+//     }
+//   }
+
+//   // Hero content
+//   .heroContent {
+//     margin-top: 120px; // space for header
+//     text-align: center;
+//     color: #fff;
+//     z-index: 2;
+//     padding: 0 20px;
+
+//     .heroTitle {
+//       font-size: clamp(2rem, 5vw, 4rem);
+//       font-weight: 700;
+//       line-height: 1.2;
+//       margin-bottom: 20px;
+//       color:white;
+//     }
+
+//     .heroSub {
+//       font-size: clamp(1rem, 1.2vw, 1.3rem);
+//       line-height: 1.6;
+//       margin-bottom: 30px;
+//     }
+
+//     .heroBtn {
+//       padding: 12px 30px;
+//       border-radius: 30px;
+//       border: none;
+//       background: #53be80;
+//       color: #fff;
+//       font-weight: 600;
+//       cursor: pointer;
+//       transition: all 0.3s;
+
+//       &:hover {
+//         background: #27ae60;
+//         transform: translateY(-2px);
+//       }
+//     }
+
+//     .horizontalLine {
+//       width: 100%;
+//       max-width: 800px;
+//       height: 2px;
+//       background: rgba(255, 255, 255, 0.4);
+//       margin: 60px auto 0 auto;
+//     }
+//   }
+
+  
+//   // Bottom cards overlapping hero image
+//   .cardsWrapper {
+//     position: absolute;
+//     bottom: -50px; // half of card height to overlap
+//     display: flex;
+//     gap: 20px;
+//     z-index: 3;
+
+//     .card {
+//       background: #24074d;
+//       padding: 20px 30px;
+//       border-radius: 12px;
+//       box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+//       min-width: 500px;
+//       text-align: center;
+//       font-weight: 600;
+//     }
+//   }
+
+//     .card {
+//     background: rgba(36, 7, 77, 0.9); // slightly transparent purple
+//     padding: 20px 30px;
+//     border-radius: 12px;
+//     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+//     min-width: 300px;
+//     max-width: 350px;
+//     text-align: center;
+//     color: #fff;
+
+//     h3 {
+//       font-size: 1.25rem;
+//       font-weight: 700;
+//       margin-bottom: 12px;
+//     }
+
+//     p {
+//       font-size: 0.95rem;
+//       line-height: 1.6;
+//       color: #e0e0e0;
+//     }
+//   }
+// }
+
+
+// /* Responsive */
+// @media (max-width: 1024px) {
+//   .heroSection {
+//     .header {
+//       padding: 20px 40px;
+//     }
+
+//     .heroContent {
+//       .heroTitle {
+//         font-size: 3rem;
+//       }
+//       .heroSub {
+//         font-size: 1.1rem;
+//       }
+//     }
+
+//     .cardsWrapper {
+//       gap: 15px;
+//       .card {
+//         min-width: 100px;
+//         padding: 15px 20px;
+//       }
+//     }
+  
+
+   
+// //   .cardsWrapper {
+// //     flex-direction: column;
+// //     bottom: -180px;
+// //     align-items: center;
+
+// //     .card {
+// //       min-width: 80%;
+// //       margin-bottom: 20px;
+// //     }
+// //   }
+// // }
+// //   }
+
+
+//     .header {
+//       flex-direction: column;
+//       gap: 10px;
+//     }
+
+//     .heroContent {
+//       margin-top: 100px;
+
+//       .heroTitle {
+//         font-size: 2.2rem;
+//       }
+//       .heroSub {
+//         font-size: 1rem;
+//       }
+//     }
+
+//     .cardsWrapper {
+//       flex-direction: column;
+//       bottom: -160px; // increase for mobile
+//       .card {
+//         width: 80%;
+//         margin: 10px auto;
+//       }
+//     }
+//   }
+// }
+//..................
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background-image: url("/robohand2.jpg"); // your hero image
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  // background: rgb(0,0,0,0.2);
+  .overlay {
+  position: absolute;
+  inset: 0; // covers entire hero section
+  background: rgba(0, 0, 0, 0.7); // dark overlay, adjust opacity (0.3 - 0.6)
+  z-index: 1;
+}
+
+
+  // Header
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background: transparent;
+
+    &.white {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+      .nav a {
+        color: #000;
+      }
+      .logo {
+        color: #000;
+      }
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #53be80;
+        }
+      }
+    }
+  }
+
+  // Hero content
+  .heroContent {
+    margin-top: 120px; // space for header
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    padding: 0 20px;
+
+    .heroTitle {
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color:white;
+    }
+
+    .heroSub {
+      font-size: clamp(1rem, 1.2vw, 1.3rem);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .heroBtn {
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: none;
+      background: #53be80;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background: #27ae60;
+        transform: translateY(-2px);
+      }
+    }
+
+    .horizontalLine {
+      width: 100%;
+      max-width: 800px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.4);
+      margin: 60px auto 0 auto;
+    }
+  }
+
+  
+  // Bottom cards overlapping hero image
+//   .cardsWrapper {
+//     position: absolute;
+//     bottom: -50px; // half of card height to overlap
+//     display: flex;
+//     gap: 20px;
+//     z-index: 3;
+
+//     .card {
+//       background: #24074d;
+//       padding: 20px 30px;
+//       border-radius: 12px;
+//       box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+//       min-width: 500px;
+//       text-align: center;
+//       font-weight: 600;
+//     }
+//   }
+
+//     .card {
+//     background: rgba(36, 7, 77, 0.9); // slightly transparent purple
+//     padding: 20px 30px;
+//     border-radius: 12px;
+//     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+//     min-width: 300px;
+//     max-width: 350px;
+//     text-align: center;
+//     color: #fff;
+
+//     h3 {
+//       font-size: 1.25rem;
+//       font-weight: 700;
+//       margin-bottom: 12px;
+//     }
+
+//     p {
+//       font-size: 0.95rem;
+//       line-height: 1.6;
+//       color: #e0e0e0;
+//     }
+//   }
+// }
+
+
+// .cardsWrapper {
+//   position: absolute;
+//   bottom: -50; // stick to bottom of hero image
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-end;
+//   gap: 20px;
+//   z-index: 8;
+//   padding-bottom: 20px; // space from bottom
+
+//   .card {
+//     background: rgba(36, 7, 77, 0.9);
+//     padding: 20px 25px;
+//     border-radius: 12px;
+//     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+//     text-align: center;
+//     color: #fff;
+
+//     h3 {
+//       font-size: 1.2rem;
+//       font-weight: 700;
+//       margin-bottom: 10px;
+//     }
+
+//     p {
+//       font-size: 0.9rem;
+//       line-height: 1.5;
+//       color: #e0e0e0;
+//     }
+//   }
+
+//   // Main center card
+//   .mainCard {
+//     min-width: 360px;
+//     max-width: 400px;
+//     padding: 25px 35px;
+//   }
+
+//   // Small side cards
+//   .smallCard {
+//     min-width: 240px;
+//     max-width: 280px;
+//     padding: 20px 25px;
+//   }
+// }
+
+
+.cardsWrapper {
+  position: absolute;
+  bottom: -70px; // half of card height (adjust as needed)
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 8;
+  padding: 0 20px;
+
+  .card {
+    background: rgba(36, 7, 77, 0.9);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #fff;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+  }
+
+  // Main center card
+  .mainCard {
+    min-width: 360px;
+    max-width: 400px;
+  }
+
+  // Small side cards
+  .smallCard {
+    min-width: 240px;
+    max-width: 280px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cardsWrapper {
+    flex-direction: column;
+    align-items: center;
+    bottom: -60px;
+
+    .mainCard,
+    .smallCard {
+      max-width: 90%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsWrapper {
+    bottom: -50px;
+
+    .mainCard,
+    .smallCard {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .heroSection {
+    .header {
+      padding: 20px 40px;
+    }
+
+    .heroContent {
+      .heroTitle {
+        font-size: 3rem;
+      }
+      .heroSub {
+        font-size: 1.1rem;
+      }
+    }
+
+    .cardsWrapper {
+      gap: 15px;
+      .card {
+        min-width: 100px;
+        padding: 15px 20px;
+      }
+    }
+  }
+  
+@media (max-width: 1024px) {
+  .cardsWrapper {
+    flex-direction: column;
+    align-items: center;
+    bottom: -20px;
+
+    .mainCard,
+    .smallCard {
+      max-width: 90%;
+      margin-bottom: 15px;
+    }
+  }
+}
+   
+//   .cardsWrapper {
+//     flex-direction: column;
+//     bottom: -180px;
+//     align-items: center;
+
+//     .card {
+//       min-width: 80%;
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+//   }
+
+
+    .header {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .heroContent {
+      margin-top: 100px;
+
+      .heroTitle {
+        font-size: 2.2rem;
+      }
+      .heroSub {
+        font-size: 1rem;
+      }
+    }
+
+    .cardsWrapper {
+      flex-direction: column;
+      bottom: -160px; // increase for mobile
+      .card {
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardsWrapper {
+    flex-direction: column;
+    align-items: center;
+    bottom: -60px;
+
+    .mainCard,
+    .smallCard {
+      max-width: 90%;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsWrapper {
+    bottom: -50px;
+
+    .mainCard,
+    .smallCard {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+}

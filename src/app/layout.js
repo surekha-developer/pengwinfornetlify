@@ -62,6 +62,7 @@ import { useEffect, useState } from "react";
 import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Loader from "@/components/Loader";
+import CustomCursor from "@/components/CustomCursor/CustomCursor";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
       <body>
+        <CustomCursor/>
         {loading && <Loader />}
         {!loading && children}
       </body>

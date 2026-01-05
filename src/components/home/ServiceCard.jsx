@@ -4,7 +4,8 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { FaCheckCircle } from "react-icons/fa";
+// import { FaCheckCircle } from "react-icons/fa";
+import { SiTicktick } from "react-icons/si"
 import styles from "../../styles/homeStyles/ServicesList.module.scss";
 
 export default function ServiceCard({ service, reverse }) {
@@ -71,7 +72,7 @@ export default function ServiceCard({ service, reverse }) {
                 key={idx}
                 className={visiblePoints.includes(idx) ? styles.fadeUp : ""}
               >
-                <FaCheckCircle className={styles.icon} />
+                <SiTicktick className={styles.icon} />
                 <span>{point}</span>
               </li>
             ))}

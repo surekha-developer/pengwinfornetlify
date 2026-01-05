@@ -144,7 +144,7 @@ import StrengthCard from "./StrengthCard";
 const strengthsData = [
   { image: "/strengthcustomer.png", number: "100+", title: "Customers" },
   { image: "/strengthproject.png", number: "50+", title: "Projects" },
-  { image: "/strengthtimerbg.png", number: "2000+", title: "Hours of Consulting" },
+  { image: "/strengthtimerbg.png", number: "1500+", title: "Hours of Consulting" },
 ];
 
 export default function StrengthsSection() {
@@ -175,7 +175,7 @@ export default function StrengthsSection() {
       <div className={styles.container}>
         {/* Heading */}
         <div className={styles.heading}>
-          <h1>Our Strengths</h1>
+          {/* <h1>Our Strengths</h1> */}
           <p>Who We Are</p>
         </div>
 
@@ -188,6 +188,7 @@ export default function StrengthsSection() {
               number={item.number}
               title={item.title}
               index={index}
+              animate={isVisible}
             />
           ))}
         </div>

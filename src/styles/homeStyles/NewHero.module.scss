@@ -1,0 +1,416 @@
+
+
+
+
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  min-height: 60vh;
+  color: #fff;
+  padding-bottom: 70px;
+}
+
+.bg {
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(0, 0, 0, 0.85),
+  //   rgba(0, 0, 0, 0.55)
+  // );
+//    background: linear-gradient(
+//     to right,
+//     rgba(73, 64, 64, 0.85),
+//     rgba(50, 45, 45, 0.55)
+//   );
+
+  z-index: -1;
+}
+
+/* ================= TOP BAR ================= */
+.topBar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 60px;
+  background: rgba(10, 25, 60, 0.95);
+  font-size: 13px;
+}
+
+.topInfo {
+  display: flex;
+  gap: 6px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 60px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Desktop Navigation */
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 10px;
+  letter-spacing: 1.2px;
+  color:rgb(57, 125, 233);
+}
+
+/* Social Icons */
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  // color: #fff;
+  color:rgb(57, 125, 233);
+  font-size: 22px;
+  transition: color 0.3s;
+  padding-top:10px;
+}
+
+.socials a:hover {
+  color: #0e2a5c; // or any accent color
+}
+
+/* Hamburger */
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  // color: #fff;
+  color:rgb(57, 125, 233);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 0.1px;       // thickness of line
+  // background: rgba(255, 255, 255, 0.3); // semi-transparent white
+  background: #0e2a5c;
+  margin-top: 0px;   // optional, adjust spacing if needed
+  position: relative;
+  z-index: 10;
+}
+
+
+/* ================= MOBILE MENU ================= */
+.mobileMenu {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 25, 60, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  gap: 18px;
+  z-index: 20;
+}
+
+/* ================= HERO CONTENT ================= */
+.content {
+  padding: 80px 60px;
+  max-width: 1500px;
+}
+
+.content h1 {
+  font-size: 65px;
+  line-height: 1.2;
+    // color: rgba(15, 24, 44, 0.95);
+    color:#0e2a5c;
+    // padding-left: 30px;
+}
+
+.heading {
+  font-size: 54px;
+  line-height: 1.2;
+  color: #fff;
+  max-width: 700px;
+  /* optional fade-in for smooth effect */
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.content p {
+  margin: 20px 0 30px;
+  // color: #d0d0d0;
+  color: #554a4a;
+}
+
+// .secondaryBtn {
+//   padding: 14px 32px;
+//   border-radius: 30px;
+//   border: 1px solid #554a4a;
+//   background: transparent;
+//   color: rgb(25, 25, 49);
+// }
+
+.secondaryBtn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: 1px solid #554a4a;
+  background: transparent;
+  color: rgb(25, 25, 49);
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; // ensures Link has no underline
+
+  &:hover {
+    background-color: rgb(57, 125, 233); // change to your desired hover color
+    color: #fff; // text color on hover
+    border-color: rgb(57, 125, 233); // optional: match border with background
+  }
+}
+
+
+/* ================= FLOATING CARDS ================= */
+
+
+.cardsWrapper {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+}
+
+.cards {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 60px;
+}
+
+// .card {
+//   background: #0e2a5c;
+//   color: #fff;
+//   padding: 36px 30px;
+//   border-radius: 12px;
+//   transition: all 0.4s ease; // smooth animation
+//   cursor: pointer;
+
+//   h3 {
+//     font-size: 22px;
+//     margin-bottom: 15px;
+//     color:white;
+//   }
+
+//   p {
+//     font-size: 14px;
+//     line-height: 1.5;
+//     color:white;
+//   }
+
+ 
+// }
+
+//..................
+.card {
+  background: #0e2a5c;
+  color: #fff;
+  padding: 36px 30px;
+  border-radius: 5px;
+  transition: all 0.4s ease; // smooth animation
+  cursor: pointer;
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color:white;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color:white;
+  }
+
+  &:hover {
+    // background: #857f7f; // change to your accent color
+ 
+    transform: translateY(-10px); // slight lift effect
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: #6d8395;
+    
+    color:black;
+  }
+}
+
+//..............
+// .card {
+//   background: #0e2a5c; // normal background color
+//   color: #fff;
+//   padding: 36px 30px;
+//   border-radius: 12px;
+//   transition: all 0.4s ease;
+//   cursor: pointer;
+//   position: relative;
+//   overflow: hidden;
+
+//   h3 {
+//     font-size: 22px;
+//     margin-bottom: 15px;
+//     color: white;
+//     transition: color 0.4s ease;
+//   }
+
+//   p {
+//     font-size: 14px;
+//     line-height: 1.5;
+//     color: white;
+//     transition: color 0.4s ease;
+//   }
+
+//   &:hover {
+//     transform: translateY(-10px); // slight lift
+//     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+//     /* Make text more visible on hover */
+//     h3, p {
+//       color: #fff;
+//     }
+
+//     /* Overlay background image */
+//     &:before {
+//       opacity: 1;
+//     }
+//   }
+
+//   /* Background image overlay */
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     inset: 0;
+//     background-image: url('/robohand2.jpg'); // path to your hover image
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     opacity: 0;
+//     border-radius: 12px;
+//     transition: opacity 0.4s ease;
+//     z-index: 0;
+//   }
+
+//   /* Keep content above the image */
+//   h3, p {
+//     position: relative;
+//     z-index: 1;
+//   }
+// }
+
+
+/* Optional: active card slightly bigger */
+.active {
+  transform: scale(1.05);
+}
+
+
+/* Optional: make active card slightly bigger */
+.active {
+  transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .cardsWrapper {
+  position: absolute;
+  bottom: -450px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+  .nav, .socials {
+    display: none;
+  }
+  .topBar{
+    display:none
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 16px 24px;
+  }
+  .menuBtn {
+ 
+  border: none;
+  // color: #fff;
+  color:rgb(57, 125, 233);
+  font-size: 28px;
+  cursor: pointer;
+  padding-top:20px;
+}
+   .cardsWrapper {
+  position: absolute;
+  bottom: -650px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+  .logo span {
+    font-size: 24px;
+  }
+}
+.content {
+  padding: 50px 60px;
+  max-width: 1500px;
+}
+

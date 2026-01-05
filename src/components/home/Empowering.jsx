@@ -1,78 +1,164 @@
 
 
+// "use client";
+
+// import { useEffect, useState } from "react";
+// import Image from "next/image";
+// import styles from "@/styles/homeStyles/Empowering.module.scss";
+
+// export default function EmpoweringSection() {
+//   const headingText = "Emmpowering Your Digital Transformation";
+//   const [typedText, setTypedText] = useState("");
+//   const [showParagraphs, setShowParagraphs] = useState(false);
+
+//  useEffect(() => {
+//   let index = 0;
+
+//   const interval = setInterval(() => {
+//     if (index < headingText.length) {
+//       setTypedText((prev) => prev + headingText.charAt(index));
+//       index++;
+//     } else {
+//       clearInterval(interval);
+//       setTimeout(() => setShowParagraphs(true), 300);
+//     }
+//   }, 60);
+
+//   return () => clearInterval(interval);
+// }, []);
+
+
+//   return (
+//     <section className={styles.empoweringSection}>
+//       {/* Background Image */}
+//       <Image
+//         src="/empowerbg.jpg"
+//         alt="Empowering Digital Transformation"
+//         fill
+//         priority
+//         className={styles.bgImage}
+//       />
+
+//       {/* Overlay */}
+//       <div className={styles.overlay}></div>
+
+//       {/* Content */}
+//       <div className={styles.content}>
+//         <h2 className={styles.typewriter}>Empowering Your Digital Transformation</h2>
+
+//         <p className={`${styles.paragraph} ${showParagraphs ? styles.show : ""}`}>
+          // Pengwin Tech Solutions is a forward-thinking software development company
+          // delivering secure, scalable, and intelligent digital solutions. We help
+          // businesses turn ideas into high-impact websites, powerful mobile
+          // applications, feature-rich e-commerce platforms, and enterprise-grade
+          // systems.
+//         </p>
+
+//         <p
+//           className={`${styles.paragraph} ${showParagraphs ? styles.showDelay : ""}`}
+//         >
+          // Driven by innovation and backed by deep technical expertise, we design
+          // solutions that enhance user experience, streamline operations, and
+          // accelerate business growth. From strategy and design to development and
+          // deployment, we partner with you at every stage to ensure lasting digital
+          // success.
+//         </p>
+//       </div>
+//     </section>
+//   );
+// }
+//...........
+// above code is good
+
+
 "use client";
 
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import styles from "../../styles/homeStyles/Empowering.module.scss";
+import styles from "@/styles/homeStyles/Empowering.module.scss";
 
-export default function Empowering() {
+export default function EmpoweringSection() {
+  const headingText = "Empowering Your Digital Transformation";
+  const [typedText, setTypedText] = useState("");
+  const [showParagraphs, setShowParagraphs] = useState(false);
+  const sectionRef = useRef(null);
+  const hasTypedRef = useRef(false); // use ref to persist across renders
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-    });
+    if (!sectionRef.current) return;
+
+    let intervalId;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasTypedRef.current) {
+            hasTypedRef.current = true; // mark as typed
+
+            const words = headingText.split(" ");
+            let index = 0;
+
+            intervalId = setInterval(() => {
+              if (index < words.length) {
+                const nextWord = words[index];
+                setTypedText((prev) => (prev ? `${prev} ${nextWord}` : nextWord));
+                index++;
+              } else {
+                clearInterval(intervalId);
+                setTimeout(() => setShowParagraphs(true), 400);
+              }
+            }, 300);
+          }
+        });
+      },
+      { root: null, threshold: 0.3 }
+    );
+
+    observer.observe(sectionRef.current);
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
   }, []);
 
-  const strengths = [
-    "Custom Mobile App Development",
-    "Website & Web-App Development",
-    "E-commerce Solutions",
-    "UI/UX Design",
-    "Cloud & Server Deployments",
-  ];
-
   return (
-    <section className={styles.empowering}>
-      <div className={styles.empowerRow}>
-        {/* IMAGE */}
-        <div className={styles.imageWrapper} data-aos="fade-right">
-          <div className={styles.amoeba}>
-            <Image
-              src="/pengwinmockup.png"
-              alt="Empowering Digital Transformation"
-              fill
-              priority
-              sizes="(max-width: 1024px) 90vw, 50vw"
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-        </div>
+    <section ref={sectionRef} className={styles.empoweringSection}>
+      <Image
+        src="/empower2.jpg"
+        alt="Empowering Digital Transformation"
+        fill
+        priority
+        className={styles.bgImage}
+      />
 
-        {/* TEXT */}
-        <div className={styles.text} data-aos="fade-left">
-          <h2 data-aos="fade-up">
-            Empowering Your Digital Transformation
-          </h2>
+      <div className={styles.overlay}></div>
 
-          <p data-aos="fade-up" data-aos-delay="100">
-            Pengwin Tech Solutions is a leading-edge software development company
-            delivering robust, scalable, and intelligent digital solutions. We
-            empower businesses to transform their ideas into seamless websites,
-            mobile applications, e-commerce platforms, and enterprise systems.
-          </p>
+      <div className={styles.content}>
+        <h2 className={styles.typewriter}>
+          {typedText}
+          <span className={styles.caret}>|</span>
+        </h2>
 
-          <h3
-            className={styles.subHeading}
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Our Strengths
-          </h3>
+        <p className={`${styles.paragraph} ${showParagraphs ? styles.show : ""}`}>
+             Pengwin Tech Solutions is a forward-thinking software development company
+          delivering secure, scalable, and intelligent digital solutions. We help
+          businesses turn ideas into high-impact websites, powerful mobile
+          applications, feature-rich e-commerce platforms, and enterprise-grade
+          systems.
+        </p>
 
-          <ul className={styles.strengthList}>
-            {strengths.map((item, i) => (
-              <li key={i} data-aos="fade-up" data-aos-delay={200 + i * 80}>
-                <MdKeyboardDoubleArrowRight className={styles.icon} />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <p
+          className={`${styles.paragraph} ${
+            showParagraphs ? styles.showDelay : ""
+          }`}
+        >
+         Driven by innovation and backed by deep technical expertise, we design
+          solutions that enhance user experience, streamline operations, and
+          accelerate business growth. From strategy and design to development and
+          deployment, we partner with you at every stage to ensure lasting digital
+          success.
+        </p>
       </div>
     </section>
   );

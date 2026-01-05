@@ -2,19 +2,268 @@
 
 
 
-//.......
+
+
+// .footer {
+//   position: relative;
+//   padding: 60px 20px 120px; // extra bottom padding for wave
+//   font-family: "Poppins", sans-serif;
+//   overflow: hidden;
+// //   background: #2d3b5b;
+//   color: #ffffff;
+// //  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+//  background: linear-gradient(135deg,#3b82f6 0%, #1e3a8a 50%,#172c5f 100%);
+// // background: rgb(138, 132, 132);
+// //  background: linear-gradient(135deg,#bec9d9 0%, #63697c 50%,#1b1e27 100%);
+ 
+// }
+
+// .footerContainer {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: 40px;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
+
+// /* Footer Sections */
+// .footerSection {
+//   display: flex;
+//   flex-direction: column;
+  
+// }
+
+// .footerSection h4 {
+//   font-size: 20px;
+//   font-weight: 600;
+//   margin-bottom: 16px;
+//   transition: color 0.3s ease;
+//   color:rgb(216, 186, 252);
+//   padding-top:20px;
+// }
+
+// .footerSection h4:hover {
+//   color: #ff6b6b;
+//   cursor: pointer;
+// }
+
+// .footerSection p,
+// .footerSection ul li {
+//   font-size: 16px;
+// //   color: #cbd5e1;
+// color:white;
+//   line-height: 1.8;
+// }
+
+// /* Lists */
+// .footerSection ul {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
+
+// .footerSection ul li {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   margin-bottom: 8px;
+//   transition: all 0.3s ease;
+//   cursor: pointer;
+// }
+
+// .footerSection ul li:hover {
+//   color: #ff6b6b;
+//   transform: translateX(4px);
+// }
+
+// .listIcon {
+// //   color: #ff6b6b;
+// color:white;
+//   font-size: 18px;
+//   flex-shrink: 0;
+//   transition: color 0.3s ease;
+// }
+
+// .footerSection ul li:hover .listIcon {
+//   color: #ff6b6b;
+// }
+
+// .contactIcon {
+//   margin-right: 10px;
+//   color: white;
+//   min-width: 20px;
+//   vertical-align: middle;
+// }
+
+// /* Ensure p tags are flex for proper alignment */
+// .footerSection p {
+//   display: flex;
+//   align-items: center;
+//   font-size: 16px;
+//   color: #cbd5e1;
+//   line-height: 1.8;
+//   transition: color 0.3s ease;
+// }
+
+// .footerSection p:hover {
+//   color: #ff6b6b;
+//   cursor: pointer;
+// }
+
+// .footerSection:first-child {
+//   min-height: 300px; /* adjust to match tallest section */
+// }
+
+
+// // /* Logo */
+// // .logo {
+// // //   margin-bottom: 16px;
+// // //   background:white;
+// // // color:white;
+// // }
+
+// /* Highlight text under logo */
+// .highlight {
+//   font-size: 14px;
+//   color: #e2e8f0;
+//   margin-bottom: 16px;
+//   line-height: 1.6;
+// }
+
+// /* Social icons */
+// .socialIcons {
+//   display: flex;
+//   gap: 16px;
+// }
+
+// .socialIcons a {
+//   color: #ffffff;
+//   font-size: 20px;
+//   transition: color 0.3s ease;
+// }
+
+// .socialIcons a:hover {
+//   color: #ff6b6b;
+// }
+
+// /* Copyright */
+// .copyRight {
+//   text-align: center;
+//   margin-top: 40px;
+//   font-size: 14px;
+//   color: #94a3b8;
+// }
+
+// /* Wave at bottom */
+// .wave {
+//   transform: scaleY(-1); // wave points inside
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100px; // adjust as needed
+//   background: url('/intersecting-waves-scattered.svg') no-repeat bottom;
+//   background-size: cover;
+//   pointer-events: none;
+// }
+
+// /* ===========================
+//    RESPONSIVE
+// =========================== */
+
+// /* Tablet: 2 columns x 2 rows */
+// // @media (max-width: 1024px) {
+// //   .footerContainer {
+// //     grid-template-columns: repeat(2, 1fr);
+// //     gap: 30px;
+// //   }
+// // }
+
+// // /* Mobile: 1 column x 4 rows */
+// // @media (max-width: 600px) {
+// //   .footerContainer {
+// //     grid-template-columns: 1fr;
+// //     gap: 20px;
+// //   }
+// // }
+
+// /* Tablet: stack sections in 2 columns with equal height */
+// @media (max-width: 1024px) {
+//   .footerContainer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     gap: 30px;
+//     align-items: flex-start; /* Align all sections to top */
+//   }
+
+//   .footerSection {
+//     flex: 0 0 48%; /* Two columns per row */
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start; /* Keep content at top */
+//     // margin-bottom: 20px;
+//   }
+// }
+
+
+//...............above code is good
+
+
+
 
 .footer {
   position: relative;
-  padding: 60px 20px 120px; // extra bottom padding for wave
   font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 60px 20px 120px;
   overflow: hidden;
-//   background: #2d3b5b;
-  color: #ffffff;
-//  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
- background: linear-gradient(135deg,#3b82f6 0%, #1e3a8a 50%,#172c5f 100%);
+
+  .bgOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    // background: url("/foo.jpg") center / cover no-repeat;
+    background: rgb(235, 239, 242);
+    /* Dark overlay on image */
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   inset: 0;
+    //   background-color: rgba(0,0,0,0.5); // dim the image
+    }
+  }
+
+  .footerContainer,
+  .copyRight {
+    position: relative;
+    z-index: 1; /* content above overlay */
+  }
+// }
+
+
+
+
+
+
+// .footer {
+//   position: relative;
+//   padding: 60px 20px 120px;
+//   font-family: "Poppins", sans-serif;
+//   overflow: hidden;
+//   color: #ffffff;
+
+//   /* Background image */
+//   background: url("/footerbg.jpg") center / cover no-repeat;
+//   z-index: 0;
  
-}
+// }
+
+// .footerContainer,
+// .copyRight {
+//   position: relative;
+//   z-index: 1; /* above background image */
+// }
 
 .footerContainer {
   display: grid;
@@ -28,16 +277,16 @@
 .footerSection {
   display: flex;
   flex-direction: column;
-  
 }
 
 .footerSection h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
+  // color: rgb(216, 186, 252);
+  color:rgb(146, 116, 183);
+  padding-top: 20px;
   transition: color 0.3s ease;
-  color:rgb(216, 186, 252);
-  padding-top:20px;
 }
 
 .footerSection h4:hover {
@@ -48,8 +297,7 @@
 .footerSection p,
 .footerSection ul li {
   font-size: 16px;
-//   color: #cbd5e1;
-color:white;
+  color: black;
   line-height: 1.8;
 }
 
@@ -65,8 +313,8 @@ color:white;
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .footerSection ul li:hover {
@@ -75,8 +323,7 @@ color:white;
 }
 
 .listIcon {
-//   color: #ff6b6b;
-color:white;
+  color: black;
   font-size: 18px;
   flex-shrink: 0;
   transition: color 0.3s ease;
@@ -88,7 +335,7 @@ color:white;
 
 .contactIcon {
   margin-right: 10px;
-  color: white;
+  color: black;
   min-width: 20px;
   vertical-align: middle;
 }
@@ -98,7 +345,8 @@ color:white;
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #cbd5e1;
+  // color: #cbd5e1;
+  color:black;
   line-height: 1.8;
   transition: color 0.3s ease;
 }
@@ -112,13 +360,10 @@ color:white;
   min-height: 300px; /* adjust to match tallest section */
 }
 
-
-// /* Logo */
-// .logo {
-// //   margin-bottom: 16px;
-// //   background:white;
-// // color:white;
-// }
+/* Logo */
+.logo {
+  margin-bottom: 16px;
+}
 
 /* Highlight text under logo */
 .highlight {
@@ -150,18 +395,21 @@ color:white;
   margin-top: 40px;
   font-size: 14px;
   color: #94a3b8;
+  z-index: 1;
+  position: relative;
 }
 
-/* Wave at bottom */
+/* SVG Wave at bottom */
 .wave {
-  transform: scaleY(-1); // wave points inside
+  transform: scaleY(-1);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; // adjust as needed
+  height: 100px;
   background: url('/intersecting-waves-scattered.svg') no-repeat bottom;
   background-size: cover;
+  z-index: 2; /* above background but below text */
   pointer-events: none;
 }
 
@@ -169,39 +417,37 @@ color:white;
    RESPONSIVE
 =========================== */
 
-/* Tablet: 2 columns x 2 rows */
-// @media (max-width: 1024px) {
-//   .footerContainer {
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 30px;
-//   }
-// }
-
-// /* Mobile: 1 column x 4 rows */
-// @media (max-width: 600px) {
-//   .footerContainer {
-//     grid-template-columns: 1fr;
-//     gap: 20px;
-//   }
-// }
-
-/* Tablet: stack sections in 2 columns with equal height */
+/* Tablet: stack sections in 2 columns */
 @media (max-width: 1024px) {
   .footerContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    align-items: flex-start; /* Align all sections to top */
+    align-items: flex-start;
   }
 
   .footerSection {
-    flex: 0 0 48%; /* Two columns per row */
+    flex: 0 0 48%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Keep content at top */
-    // margin-bottom: 20px;
+    justify-content: flex-start;
   }
 }
 
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .footerSection {
+    flex: 1 1 100%;
+  }
+
+  .copyRight {
+    font-size: 12px;
+  }
+}

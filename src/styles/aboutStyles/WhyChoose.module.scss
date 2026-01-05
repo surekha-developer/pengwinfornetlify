@@ -2,7 +2,8 @@
 
 .whyChoose {
   padding: 80px 20px;
-  background: linear-gradient(rgb(235, 212, 235), rgb(118, 120, 199));
+  // background: linear-gradient(rgb(235, 212, 235), rgb(118, 120, 199));
+   background: #f9f9f9;
 }
 
 .container {
@@ -27,7 +28,7 @@
     font-size: 16px;
     margin-bottom: 20px;
     color: #262829;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   ul {
@@ -41,7 +42,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
-       font-weight: 600;
+       font-weight: 450;
     }
   }
 }

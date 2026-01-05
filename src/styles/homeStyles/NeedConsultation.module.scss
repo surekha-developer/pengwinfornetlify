@@ -1,0 +1,89 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  background-image: url('/consulting.jpg'); /* your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:100px;
+}
+
+/* Dark overlay for readability */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.subText {
+  font-size: 22px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  color:white;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  line-height: 1.1;
+  color:white;
+}
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid;
+  padding: 14px 36px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d97706;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 48px;
+  }
+
+  .section {
+    min-height: 380px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 34px;
+  }
+
+  .subText {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .section {
+    min-height: 320px;
+  }
+}

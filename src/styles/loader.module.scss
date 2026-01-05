@@ -1,5 +1,51 @@
 
 
+// .loaderWrapper {
+//   position: fixed;
+//   inset: 0;
+//   background: #eceef8;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   z-index: 9999;
+// }
+
+// .loader {
+//   width: 40px;
+//   aspect-ratio: 1;
+//   position: relative;
+
+//   background:
+//     /* top box */
+//     conic-gradient(from 134deg at top, #3b82f6 92deg, transparent 0) top,
+//     /* bottom box */
+//     conic-gradient(from -46deg at bottom, #22c55e 92deg, transparent 0) bottom;
+
+//   background-size: 100% 50%;
+//   background-repeat: no-repeat;
+// }
+
+// .loader::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+
+//   background:
+//     /* left box */
+//     linear-gradient(45deg, #a855f7 14.5px, transparent 0 calc(100% - 14.5px), #a855f7 0),
+//     /* right box */
+//     linear-gradient(-45deg, #ec4899 14.5px, transparent 0 calc(100% - 14.5px), #ec4899 0);
+
+//   animation: l7 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+// }
+
+// @keyframes l7 {
+//   33%  { inset: -10px; transform: rotate(0deg); }
+//   66%  { inset: -10px; transform: rotate(90deg); }
+//   100% { inset: 0;     transform: rotate(90deg); }
+// }
+//.........
+
 .loaderWrapper {
   position: fixed;
   inset: 0;
@@ -10,37 +56,26 @@
   z-index: 9999;
 }
 
+/* Circular conic loader */
 .loader {
-  width: 40px;
+  width: 50px;
+  --b: 8px;
   aspect-ratio: 1;
-  position: relative;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%, #954655) content-box;
 
-  background:
-    /* top box */
-    conic-gradient(from 134deg at top, #3b82f6 92deg, transparent 0) top,
-    /* bottom box */
-    conic-gradient(from -46deg at bottom, #22c55e 92deg, transparent 0) bottom;
+  -webkit-mask: 
+    repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+    radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+          mask-composite: intersect;
 
-  background-size: 100% 50%;
-  background-repeat: no-repeat;
+  animation: rotateLoader 1s infinite steps(10);
 }
 
-.loader::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background:
-    /* left box */
-    linear-gradient(45deg, #a855f7 14.5px, transparent 0 calc(100% - 14.5px), #a855f7 0),
-    /* right box */
-    linear-gradient(-45deg, #ec4899 14.5px, transparent 0 calc(100% - 14.5px), #ec4899 0);
-
-  animation: l7 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
-}
-
-@keyframes l7 {
-  33%  { inset: -10px; transform: rotate(0deg); }
-  66%  { inset: -10px; transform: rotate(90deg); }
-  100% { inset: 0;     transform: rotate(90deg); }
+@keyframes rotateLoader {
+  to {
+    transform: rotate(1turn);
+  }
 }
