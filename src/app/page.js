@@ -7,6 +7,7 @@ import NeedConsultation from "@/components/home/NeedConsultation";
 import NewAboutHome from "@/components/home/NewAboutHome";
 import NewHeroSection from "@/components/home/NewHero";
 import NewServicesHome from "@/components/home/NewServicesHome";
+import NewServicesTimeline from "@/components/home/NewServicesTimeLine";
 import OurClients from "@/components/home/OurClients";
 import OurStrengthNew from "@/components/home/ourStrengthNew";
 
@@ -18,6 +19,7 @@ import StrengthsSection from "@/components/home/StrengthSection";
 // import StrengthsSection from "@/components/home/StrengthSection";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import NewFooter from "@/components/layout/NewFooter";
 
 
 
@@ -35,16 +37,22 @@ export default function Home() {
       <OurClients/>
       <Footer/> */}
        {/* <HeroCarousel /> */}
+
+
+       {/* //..........goodpattern */}
       <NewHeroSection/>
       <NewAboutHome/>
-       {/* <OurStrengthNew/> */}
-       <NewServicesHome/>
+       
+       <NewServicesTimeline/>
        <NeedConsultation/>
         <EmpoweringSection/>
          
          <OurClients/>
-         <Footer/>
-     
+        
+         <NewFooter/>
+         
+     {/* //...........goodpattern */}
+
       
     </>
 

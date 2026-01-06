@@ -118,10 +118,10 @@ export default function Services() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
-        <h2 className={styles.heading}>Our Services</h2>
+        {/* <h2 className={styles.heading}>Our Services</h2>
         <p className={styles.subheading}>
           Smart solutions crafted to help your business grow and scale.
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           {servicesData.map((service, index) => (

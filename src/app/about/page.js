@@ -12,6 +12,7 @@ import WhyChooseNew from "@/components/about/WhyChooseNew";
 import Footer from "@/components/layout/Footer";
 
 import Header from "@/components/layout/Header";
+import NewFooter from "@/components/layout/NewFooter";
 
 
 export default function AboutPage() {
@@ -27,7 +28,7 @@ export default function AboutPage() {
 <VisionMissionValues/>
   <WhyChooseNew/>
   
-
+<NewFooter/>
   
 
   {/* //........... */}
@@ -41,7 +42,7 @@ export default function AboutPage() {
   {/* <Carousels/> */}
   
   {/* <WhyChooseUs/> */}
-  <Footer/>
+  {/* <Footer/> */}
 
   {/* //........... */}
 

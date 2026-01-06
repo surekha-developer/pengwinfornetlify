@@ -4,6 +4,7 @@ import GetInTouch from "@/components/contactus/GetInTouch";
 import GoogleMap from "@/components/contactus/GoogleMaps";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import NewFooter from "@/components/layout/NewFooter";
 
 export default function ContactPage() {
   return (
@@ -16,7 +17,8 @@ export default function ContactPage() {
 {/* <ContactCards/> */}
 <GetInTouch/>
   <GoogleMap/>
-  <Footer/>
+  {/* <Footer/> */}
+  <NewFooter/>
   </>
    )
 }

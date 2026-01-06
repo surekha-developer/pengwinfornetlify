@@ -1,0 +1,382 @@
+
+
+// .services {
+//   padding: 80px 20px;
+//   background: #f7f9fc;
+// }
+
+// .title {
+//   text-align: center;
+//   font-size: 36px;
+//   margin-bottom: 60px;
+// }
+
+// .timeline {
+//   position: relative;
+//   max-width: 1050px;
+//   margin: auto;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     top: 0;
+//     width: 1.5px;
+//     height: 100%;
+//     // background: #2f80ed;
+//      background: rgba(0, 0, 0, 0.7);
+//     transform: translateX(-50%);
+//   }
+// }
+
+// .timelineItem {
+//   position: relative;
+//   width: 50%;
+// //   padding: 10px;
+//   opacity: 0;
+//   transform: translateY(50px);
+//   transition: all 0.6s ease;
+
+//   &.left {
+//     left: 0;
+//     text-align: right;
+
+//     .card {
+//       margin-right: 40px;
+//     }
+//   }
+
+//   &.right {
+//     left: 50%;
+
+//     .card {
+//       margin-left: 40px;
+//     }
+//   }
+// }
+
+// .active {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+
+// /* 🔥 Image Card */
+// .card {
+//   position: relative;
+//   height: 220px;
+//   border-radius: 14px;
+//   background-size: cover;
+//   background-position: center;
+//   overflow: hidden;
+//   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+//   transition: transform 0.5s ease;
+
+//   &:hover {
+//     transform: translateY(-6px);
+//      color:white;
+
+//     .overlay {
+//     //   background: rgba(47, 128, 237, 0.7);
+//     background: rgba(0, 0, 0, 0.7);
+   
+//     }
+//     h3,p{
+//         color:white;
+//     }
+
+//     &::before {
+//       transform: scale(1.1);
+//     }
+//   }
+// }
+
+// .overlay {
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(0, 0, 0, 0.55);
+//   transition: background 0.4s ease;
+//   z-index: 1;
+// }
+
+// .content {
+//   position: relative;
+//   z-index: 2;
+//   color: #fff;
+//   padding: 30px;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+
+//   h3 {
+//     font-size: 22px;
+//     margin-bottom: 10px;
+//     // color:white
+// //      &:hover {
+// //     transform: translateY(-6px);
+// //      color:white;
+// //   }
+// }
+
+//   p {
+//     font-size: 15px;
+//     line-height: 1.6;
+//     opacity: 0.95;
+//   }
+// }
+
+// .dot {
+//   position: absolute;
+//   top: 40px;
+//   width: 12px;
+//   height: 12px;
+// //   background: #2f80ed;
+// // background: black;
+// //   border-radius: 50%;
+//   z-index: 10;
+// }
+
+// .left .dot {
+//   right: -9px;
+// }
+
+// .right .dot {
+//   left: -9px;
+// }
+
+// /* 📱 Mobile */
+// @media (max-width: 768px) {
+//   .timeline::before {
+//     left: 10px;
+//   }
+
+//   .timelineItem {
+//     width: 100%;
+//     padding-left: 40px;
+
+//     &.left,
+//     &.right {
+//       left: 0;
+//       text-align: left;
+
+//       .card {
+//         margin: 0 0 20px 20px;
+//       }
+//     }
+//   }
+
+//   .dot {
+//     left: 2px !important;
+//   }
+// }
+// //.................
+
+
+//......................above code is timeline, below code is like blogs.........................***********************
+
+
+.blogSection {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ====================
+   HEADING
+==================== */
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+
+  .subTitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #6b7280;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+     font-style: italic;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 4px;
+      background: #1e3a8a;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 4px;
+    }
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #122347;
+   
+  }
+}
+
+/* ====================
+   GRID
+==================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ====================
+   CARD
+==================== */
+.card {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// .imageWrapper {
+//   position: relative;
+//   width: 100%;
+//   height: 230px;
+//   overflow: hidden;
+
+//   .image {
+//     object-fit: cover;
+//   }
+
+//   .date {
+//     position: absolute;
+//     bottom: 15px;
+//     left: 15px;
+//     background: #1e3a8a;
+//     color: #fff;
+//     padding: 6px 14px;
+//     font-size: 13px;
+//     font-weight: 600;
+//   }
+// }
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden; // IMPORTANT to crop zoomed image
+
+  .image {
+    object-fit: cover;
+    transition: transform 0.8s ease; // smooth zoom
+  }
+
+  .date {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #1e3a8a;
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 2;
+  }
+}
+
+.card:hover .imageWrapper .image {
+  transform: scale(1.15);
+}
+
+.card:hover .imageWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.content {
+  padding: 25px;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 15px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+// h3 {
+//   font-size: 18px;
+ 
+//   font-weight: 700;
+//   color: #111827;
+// }
+.card {
+  h3 {
+    color: #111827;
+     line-height: 1.5;
+    font-size: 18px;
+  }
+}
+
+/* ====================
+   BUTTON
+==================== */
+.btnWrapper {
+  text-align: center;
+  margin-top: 50px;
+
+  button {
+    padding: 16px 42px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* ====================
+   RESPONSIVE
+==================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading h2 {
+    font-size: 28px;
+  }
+}
