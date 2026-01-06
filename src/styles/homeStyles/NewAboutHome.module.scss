@@ -189,7 +189,7 @@ background: white;
 @media (max-width: 1024px) {
     .aboutSection {
 
-  margin-top:420px;
+  margin-top:0px;
 }
   .container {
     grid-template-columns: 1fr;
@@ -197,18 +197,28 @@ background: white;
 
   .right .grid {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 1024px) {
-  .right .grid {
-    grid-template-columns: 1fr 1fr;
+    gap:24px;
   }
 
-  .grid .card {
-    margin-top: 0; // reset offsets
-  }
+  // .cardItem {
+  //   margin-top: 0 !important;
+  // }
+
+  // .card {
+  //   height: 220px;
+  // }
+
 }
+
+// @media (max-width: 1024px) {
+//   .right .grid {
+//     grid-template-columns: 1fr 1fr;
+//   }
+
+//   .grid .card {
+//     margin-top: 0; // reset offsets
+//   }
+// }
 
 
 @media (max-width: 640px) {
@@ -231,16 +241,61 @@ background: white;
 
   .right .grid {
     grid-template-columns: 1fr;
+     gap: 20px;
   }
 }
 
 @media (max-width: 640px) {
-  .right .grid {
-    grid-template-columns: 1fr;
+  // .right .grid {
+  //   grid-template-columns: 1fr;
+  // }
+
+    .cardItem {
+    margin-top: 0 !important;
   }
+
+  .card {
+    height: 220px;
+  }
+
+
+
 
   .tall,
   .short {
     height: 220px;
   }
+}
+
+@media (max-width: 640px) {
+
+  .stats {
+    flex-direction: column;      // one by one
+    align-items: center;         // center horizontally
+    text-align: center;          // center text
+    gap: 24px;                   // spacing between stats
+  }
+
+  .stats > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats h3 {
+    font-size: 36px;
+    margin-bottom: 6px;
+  }
+
+  .stats span {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 490px) {
+        .aboutSection {
+
+  margin-top:0px;
+}
 }
