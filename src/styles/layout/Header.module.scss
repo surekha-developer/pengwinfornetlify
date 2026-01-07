@@ -88,10 +88,16 @@ a.active .underline {
 
 .dropdownMenu {
   position: absolute;
-  top: 180%;
-  // left: 0;
+  // top: 180%;
+  // // left: 0;
+  // right:1;
+  // width: 280px;
+  
+  top: 120%; /* instead of 180% */
+  // left: 0;   /* align properly */
   right:1;
   width: 280px;
+
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
