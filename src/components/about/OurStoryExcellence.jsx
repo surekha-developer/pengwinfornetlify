@@ -46,7 +46,7 @@ export default function OurStoryExcellence() {
         </div>
 
         <div className={styles.text}>
-          <h2>Our Story</h2>
+          <h2>From Idea to Impact</h2>
           <p>
             We started with a simple vision — to build meaningful digital
             solutions that empower businesses. With innovation, agility, and

@@ -64,6 +64,7 @@ export default function Header() {
           {/* Render dropdown */}
           {servicesOpen && (
             <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.show : ""}`}>
+              <Link href="/services">View All Services</Link>
               <Link href="/services/digital-transformation">Digital Transformation</Link>
               <Link href="/services/middleware-integrations">Middleware Integrations</Link>
               <Link href="/services/software-consulting">Software Consulting</Link>
