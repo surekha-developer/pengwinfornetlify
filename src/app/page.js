@@ -20,6 +20,7 @@ import StrengthsSection from "@/components/home/StrengthSection";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import NewFooter from "@/components/layout/NewFooter";
+import NewAllCardServices from "@/components/services/NewAllCardServices";
 
 
 
@@ -50,6 +51,8 @@ export default function Home() {
          <OurClients/>
         
          <NewFooter/>
+{/* 
+         <NewAllCardServices/> */}
          
      {/* //...........goodpattern */}
 

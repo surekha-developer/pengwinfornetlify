@@ -1,109 +1,5 @@
 
 
-// "use client";
-// import { useEffect, useRef } from "react";
-// import styles from "../../styles/homeStyles/NewServicesTimeLine.module.scss";
-
-// const services = [
-//   {
-//     title: "Digital Transformation",
-//     description:
-//       "Seamlessly engage your customers through innovative digital solutions.",
-//     image: "/homecaro2.jpg",
-//   },
-//   {
-//     title: "Middleware Integrations",
-//     description:
-//       "We help businesses seamlessly connect multiple software systems for smooth operations.",
-//     image: "/robohand2.jpg",
-//   },
-//   {
-//     title: "Software Consulting",
-//     description:
-//       "Analyze your current IT infrastructure and identify growth opportunities.",
-//     image: "/robohand2.jpg",
-//   },
-//   {
-//     title: "Cloud Services",
-//     description:
-//       "Deploy scalable cloud infrastructure designed to meet your business needs. Ensure reliable performance, secure data storage, and seamless cloud adoption for smooth operations.",
-//     image: "/robohand2.jpg",
-//   },
-//   {
-//     title: "Staff Augmentation",
-//     description:
-//       "Flexible Staff Augmentation — providing skilled professionals on demand to strengthen your team and drive results.",
-//     image: "/robohand2.jpg",
-//   },
-//   {
-//     title: "IoT Solutions and Services",
-//     description:
-//       "IoT Solutions — paving the way for a connected future, your one-stop shop for smart, seamless IoT services.",
-//     image: "/robohand2.jpg",
-//   },
-//   {
-//     title: "No Code / Low Code Implementations",
-//     description:
-//       "No Code & Low Code Solutions — empowering rapid delivery by building efficient apps with minimal coding.",
-//     image: "/robohand2.jpg",
-//   },
-// ];
-
-// export default function NewServicesTimeline() {
-//   const itemsRef = useRef([]);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(
-//       (entries) => {
-//         entries.forEach((entry) => {
-//           if (entry.isIntersecting) {
-//             entry.target.classList.add(styles.active);
-//           }
-//         });
-//       },
-//       { threshold: 0.3 }
-//     );
-
-//     itemsRef.current.forEach((item) => observer.observe(item));
-//     return () => observer.disconnect();
-//   }, []);
-
-//   return (
-//     <section className={styles.services}>
-//       <h2 className={styles.title}>Our Services</h2>
-
-//       <div className={styles.timeline}>
-//         {services.map((service, index) => (
-//           <div
-//             key={index}
-//             ref={(el) => (itemsRef.current[index] = el)}
-//             className={`${styles.timelineItem} ${
-//               index % 2 === 0 ? styles.left : styles.right
-//             }`}
-//           >
-//             <div
-//               className={styles.card}
-//               style={{ backgroundImage: `url(${service.image})` }}
-//             >
-//               <div className={styles.overlay}></div>
-
-//               <div className={styles.content}>
-//                 <h3>{service.title}</h3>
-//                 <p>{service.description}</p>
-//               </div>
-//             </div>
-
-//             <span className={styles.dot}></span>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-
-//......................above code is timeline, below code is like blogs.........................***********************
-
 "use client";
 
 import Image from "next/image";
@@ -117,7 +13,7 @@ const blogs = [
     image: "/digi.jpg",
     date: "Digital Transformation",
     title:
-      "We help businesses modernize processes and deliver seamless, innovative digital experiences.",
+      "We help businesses modernize processes and deliver seamless, innovative digital experiences",
   },
   {
     id: 2,

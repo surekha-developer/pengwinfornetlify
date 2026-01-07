@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import styles from "@/styles/aboutStyles/AboutHeroNew.module.scss";
+import styles from "../../styles/serviceStyles/DigitalHero.module.scss";
 import { motion } from "framer-motion";
 
-export default function NewServicesHero({
-  heading = "Our Services",
-  description = "At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow. Our expert team focuses on creating seamless, customized services that simplify operations, enhance efficiency, and drive lasting success.",
-  imageSrc = "/ser.jpg",
+export default function DigitalHero({
+  heading = "Digital Transformation",
+  description = "At Pengwin Tech Solutions, we help businesses embrace digital transformation to unlock growth and innovation. Our expert team delivers seamless, tailored solutions that modernize processes, enhance efficiency, and drive lasting success",
+  imageSrc = "/digi.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

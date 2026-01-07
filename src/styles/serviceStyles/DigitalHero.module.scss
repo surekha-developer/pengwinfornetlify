@@ -1,0 +1,93 @@
+
+
+.aboutHero {
+  position: relative;
+  width: 100%;
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Text on right side */
+  overflow: hidden;
+  margin-top:20px;
+
+  .bgImage {
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75); /* Dark overlay */
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 40px;
+    color: #fff;
+    text-align: right;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      color: whitesmoke;
+      text-align: center;
+      padding-top: 30px;
+   
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #f0f0f0;
+      text-align: center; /* Text always centered */
+      margin: 0;
+    }
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .aboutHero {
+    height: 35vh;
+
+    .content {
+      padding: 0 30px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .aboutHero {
+    height: 45vh;
+    justify-content: center;
+
+    .content {
+      padding: 0 20px;
+      padding-top:20px;
+      text-align: center;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

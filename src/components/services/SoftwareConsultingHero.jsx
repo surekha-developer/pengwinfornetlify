@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import styles from "@/styles/aboutStyles/AboutHeroNew.module.scss";
+import styles from "../../styles/serviceStyles/SoftwareConsultingHero.module.scss";
 import { motion } from "framer-motion";
 
-export default function NewServicesHero({
-  heading = "Our Services",
-  description = "At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow. Our expert team focuses on creating seamless, customized services that simplify operations, enhance efficiency, and drive lasting success.",
-  imageSrc = "/ser.jpg",
+export default function SoftwareConsultingHero({
+  heading = "Software Consulting",
+  description = "At Pengwin Tech Solutions, we help businesses evaluate and optimize their IT strategies to achieve growth. Our expert team delivers insightful, customized consulting solutions that improve efficiency, guide technology decisions, and drive lasting success",
+  imageSrc = "/digi2.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>

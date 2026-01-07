@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import styles from "@/styles/aboutStyles/AboutHeroNew.module.scss";
+import styles from "../../styles/serviceStyles/DigitalHero.module.scss";
 import { motion } from "framer-motion";
 
-export default function NewServicesHero({
-  heading = "Our Services",
-  description = "At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow. Our expert team focuses on creating seamless, customized services that simplify operations, enhance efficiency, and drive lasting success.",
-  imageSrc = "/ser.jpg",
+export default function IoTHero({
+  heading = "IoT Solutions",
+  description = "At Pengwin Tech Solutions, we help businesses harness the power of IoT to connect devices, streamline operations, and gain real-time insights. Our expert team delivers innovative, customized IoT solutions that enhance efficiency, improve decision-making, and drive lasting success",
+  imageSrc = "/digi2.jpg",
 }) {
   return (
     <section className={styles.aboutHero}>
