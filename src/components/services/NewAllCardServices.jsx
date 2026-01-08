@@ -349,7 +349,9 @@ export default function NewAllCardServices() {
    <div className={styles.overlayText}>
     Connect with us?
     <br />
+    <Link href="/contact">
     <button className={styles.overlayBtn}>Talk to Experts</button>
+    </Link>
   </div>
 </div>
 
