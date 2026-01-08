@@ -15,7 +15,7 @@ export default function ServicesSoftware() {
 
 <NewHeader/>
 
-<SoftwareConsultingHero/>
+{/* <SoftwareConsultingHero/> */}
 
 <SoftwareThree/>
 <WouldConnect/>

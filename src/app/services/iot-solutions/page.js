@@ -15,7 +15,7 @@ export default function ServicesIOT() {
 
 <NewHeader/>
 
-<IoTHero/>
+{/* <IoTHero/> */}
 
 < IoTThree/>
 

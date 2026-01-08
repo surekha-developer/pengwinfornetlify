@@ -245,6 +245,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/serviceStyles/NewAllCardServices.module.scss";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 const services = [
   {
@@ -307,6 +308,14 @@ const services = [
 
 export default function NewAllCardServices() {
   return (
+    <>
+     {/* <section>
+          <SectionHeader
+            heading="Our Services"
+            text="At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow."
+          />
+          
+        </section> */}
     <section className={styles.servicesSection}>
       <div className={styles.container}>
         {/* Heading */}
@@ -365,10 +374,12 @@ export default function NewAllCardServices() {
       <Link href="/contact">
         <button>Talk to Our Experts</button>
       </Link>
+     
     </div>
 
       </div>
      
     </section>
+    </>
   );
 }

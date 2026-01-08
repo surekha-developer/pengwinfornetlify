@@ -5,8 +5,9 @@
 
 
 .section {
-  padding: 100px 100px;
-  max-width: 1200px;
+  padding: 20px 100px;
+  // padding-top: 20px;
+  max-width: 1300px;
   margin: auto;
 
 }
@@ -17,7 +18,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
 
   opacity: 0;
   transform: translateY(60px);
@@ -62,7 +63,7 @@
 
 
 .image img {
-  width: 70%;
+  width: 60%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
@@ -74,6 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* 🔥 LEFT align by default (desktop) */
+  max-width: 800px;
 
   h2 {
     font-size: 28px;

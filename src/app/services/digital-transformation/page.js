@@ -13,7 +13,7 @@ export default function ServicesDigitalTransformation() {
   <>
 
 <NewHeader/>
-<DigitalHero/>
+{/* <DigitalHero/> */}
 
 <DigiThree/>
 <WouldConnect/>

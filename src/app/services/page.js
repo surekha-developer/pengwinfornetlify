@@ -13,7 +13,7 @@ export default function ServicesPage() {
   <>
   
   <NewHeader/>
-  <NewServicesHero/>
+  {/* <NewServicesHero/> */}
 
 <NewAllCardServices/>
 <OurClients/>

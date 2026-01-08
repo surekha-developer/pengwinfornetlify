@@ -15,7 +15,7 @@ export default function ServicesStaff() {
 
 <NewHeader/>
 
-<StaffHero/>
+{/* <StaffHero/> */}
 
 <StaffThree/>
 <WouldConnect/>

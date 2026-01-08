@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "@/styles/aboutStyles/OurStoryExcellence.module.scss";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function OurStoryExcellence() {
   const sectionRef = useRef(null);
@@ -28,7 +29,18 @@ export default function OurStoryExcellence() {
   }, []);
 
   return (
+<>   
+ <section>
+      <SectionHeader
+        heading="About Us"
+        text="At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow."
+      />
+      {/* Your content goes here */}
+    </section>
+
     <section className={styles.section} ref={sectionRef}>
+
+
       {/* ROW 1 */}
       <div
         className={`${styles.row} ${
@@ -86,5 +98,8 @@ export default function OurStoryExcellence() {
         </div>
       </div>
     </section>
+    </>
+
   );
 }
+//..................

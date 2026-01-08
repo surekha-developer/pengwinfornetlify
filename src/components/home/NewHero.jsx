@@ -306,7 +306,7 @@ export default function NewHeroSection() {
     <section className={styles.hero}>
       {/* Background */}
       <Image
-        src="/lightcolorbg.jpg"
+        src="/AiHomeImg.jpg"
         alt="AI Technology"
         fill
         priority

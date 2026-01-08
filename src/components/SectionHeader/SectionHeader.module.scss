@@ -1,0 +1,40 @@
+.sectionHeader {
+  text-align: center;        // center horizontally
+  max-width: 900px;          // controls width of text
+  margin: 0 auto 20px auto;  // center on page and spacing below
+//   padding: 0 20px;           // small horizontal padding for small screens
+padding-top: 60px;
+padding-bottom:0px;
+  h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0e2a5c;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #554a4a;
+    font-style: italic;
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

@@ -13,7 +13,7 @@ export default function ContactPage() {
   <>
 
 <NewHeader/>
-<ContactHero/>
+{/* <ContactHero/> */}
 
 <GetInTouch/>
   <GoogleMap/>

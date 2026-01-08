@@ -27,7 +27,7 @@ export default function NewAboutHome() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           variants={fadeUp}
         >
-          <span className={styles.tag}>// About Us</span>
+          <span className={styles.tag}> About Us</span>
 
           <h2>
             We Build Smart Digital Solutions for Growing Businesses

@@ -1,8 +1,17 @@
 import styles from "../../styles/serviceStyles/Digithree.module.scss";
 import Image from "next/image";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function SoftwareThree() {
   return (
+    <>
+     <section>
+          <SectionHeader
+            heading="Software Consulting"
+            text="At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow."
+          />
+          {/* Your content goes here */}
+        </section>
     <section className={styles.hero}>
       <div className={styles.content}>
         <h1>
@@ -37,5 +46,6 @@ export default function SoftwareThree() {
 </div>
       </div>
     </section>
+    </>
   );
 }

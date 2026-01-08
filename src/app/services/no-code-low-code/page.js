@@ -15,7 +15,7 @@ export default function ServicesNoCode() {
 
 <NewHeader/>
 
-<NoCodeHero/>
+{/* <NoCodeHero/> */}
 
 <LowCodeThree/>
 <WouldConnect/>

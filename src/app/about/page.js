@@ -12,6 +12,8 @@ import OurClients from "@/components/home/OurClients";
 
 import NewFooter from "@/components/layout/NewFooter";
 import NewHeader from "@/components/layout/NewHeaderBluebg";
+import Sectionone from "@/components/Section/Sectionone";
+import SectionTwo from "@/components/Section/SectionTwo";
 
 
 export default function AboutPage() {
@@ -19,8 +21,13 @@ export default function AboutPage() {
  <>
 
 <NewHeader/>
-<AboutHeroNew/>
-<OurStoryExcellence/>
+{/* <AboutHeroNew/> */}
+
+{/* <OurStoryExcellence/> */}
+{/* <Sectionone/>
+<WhoWeAreNew/> */}
+<Sectionone/>
+<SectionTwo/>
 <WhoWeAreNew/>
 <VisionMissionValues/>
   <WhyChooseNew/>

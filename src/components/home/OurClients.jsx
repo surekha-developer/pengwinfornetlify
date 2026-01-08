@@ -82,12 +82,12 @@ import styles from "../../styles/homeStyles/OurClients.module.scss";
 
 import headingImg from "../../../public/ourclientsheadingremovebg.png"; 
 import c1 from "../../../public/ourclientimages/yogaland.png";
-import c2 from "../../../public/ourclientimages/sliceflorbg.png";
-import c3 from "../../../public/ourclientimages/Ramadeus.png";
-import c4 from "../../../public/ourclientimages/magni5.png";
-import c5 from "../../../public/ourclientimages/innovarsity.png";
-import c6 from "../../../public/ourclientimages/Affidi.png"; // SMALL LOGO
-import c7 from "../../../public/ourclientimages/bxc.png";
+import c3 from "../../../public/ourclientimages/sliceflorbg.png";
+import c2 from "../../../public/ourclientimages/Ramadeus.png";
+import c5 from "../../../public/ourclientimages/magni5.png";
+import c7 from "../../../public/ourclientimages/innovarsity.png";
+import c4 from "../../../public/ourclientimages/Affidi.png"; // SMALL LOGO
+import c6 from "../../../public/ourclientimages/bxc.png";
 
 export default function OurClients() {
   const clients = [c1, c2, c3, c4, c5, c6, c7];

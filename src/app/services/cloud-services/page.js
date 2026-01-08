@@ -15,7 +15,7 @@ export default function ServicesCloud() {
 
 <NewHeader/>
 
-<CloudHero/>
+{/* <CloudHero/> */}
 
 <CloudThree/>
 <WouldConnect/>

@@ -124,6 +124,7 @@
 
 import { useState } from "react";
 import styles from "../../styles/contactStyles/GetInTouch.module.scss";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function GetInTouch() {
   const [status, setStatus] = useState("");
@@ -169,7 +170,14 @@ export default function GetInTouch() {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <>
+     <section>
+          <SectionHeader
+            heading="Contact Us"
+            text="At Pengwin Tech Solutions, we deliver innovative and reliable solutions that empower businesses to grow."
+          />
+          {/* Your content goes here */}
+        </section>    <section className={styles.contactSection}>
       {/* Left Side Image */}
       <div className={styles.left}>
         <img src="/getintouchimage.jpeg" alt="Contact Us" />
@@ -221,5 +229,6 @@ export default function GetInTouch() {
         </form>
       </div>
     </section>
+    </>
   );
 }

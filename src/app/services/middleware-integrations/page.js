@@ -14,7 +14,7 @@ export default function ServicesMiddleWare() {
   <>
 
 <NewHeader/>
-<MiddleWareHero/>
+{/* <MiddleWareHero/> */}
 
 <MiddleWareThree/>
 <WouldConnect/>

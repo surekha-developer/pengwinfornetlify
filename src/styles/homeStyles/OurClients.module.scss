@@ -93,17 +93,156 @@
 
 
 
+// .clientsSection {
+//   padding: 90px 0;
+//   scroll-margin-top: 100px;
+//   background: white;
+//   // gap:50px;
+// }
+
+// /* CENTER HEADING */
+// .headingWrapper {
+//   text-align: center;
+//   margin-bottom: 40px;
+//   display: flex;
+//   justify-content: center;
+
+//   .headingImg {
+//     width: clamp(180px, 25vw, 320px);
+//     height: auto;
+//   }
+// }
+
+// /* GRID LAYOUT */
+// // .grid {
+// //   display: grid;
+// //   grid-template-columns: repeat(3, 1fr);
+// //   gap: 10px;
+// //   max-width: 1400px;
+// //   margin: 0 auto;
+
+// //   /* 7th image centered on desktop */
+// //   .lastCenter {
+// //     grid-column: 2 / 3;
+// //   }
+
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   // gap: 20px;
+//   max-width: 1400px;
+//   margin: 0 auto;
+
+//   /* 5th, 6th, 7th items → second row centered */
+//   // .clientBox:nth-child(5) {
+//   //   grid-column: 2;
+//   // }
+
+//   // .clientBox:nth-child(6) {
+//   //   grid-column: 3;
+//   // }
+
+//   // .clientBox:nth-child(7) {
+//   //   grid-column: 4;
+//   // }
+
+
+// .clientBox:nth-child(5),
+// .clientBox:nth-child(6),
+// .clientBox:nth-child(7) {
+//   transform: translateX(50%) translateY(40px) scale(0.95);
+// }
+
+// /* When visible */
+// .visible {
+//   opacity: 1;
+//   transform: translateY(0) scale(1);
+// }
+
+// /* visible + stagger */
+// .clientBox:nth-child(5).visible,
+// .clientBox:nth-child(6).visible,
+// .clientBox:nth-child(7).visible {
+//   transform: translateX(50%) translateY(0) scale(1);
+// }
+
+
+ 
+//   @media (max-width: 600px) {
+//     grid-template-columns: repeat(1, 1fr);
+//     gap:20px;
+
+//     .lastCenter {
+//       grid-column: auto !important;
+//     }
+
+//       .grid {
+//     grid-template-columns: 1fr;
+//     gap: 32px;
+//   }
+
+//   .clientBox {
+//     transform: translateY(40px) scale(0.95) !important;
+//   }
+
+//   .visible {
+//     transform: translateY(0) scale(1) !important;
+//   }
+//   }
+// }
+
+// /* CLIENT BOX */
+// .clientBox {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 20px;
+
+//   img {
+//     width: clamp(120px, 20vw, 180px);
+//     height: auto;
+//     transition: transform 0.3s ease;
+//     object-fit: contain;
+//   }
+
+//   &:hover img {
+//     transform: scale(1.05);
+//   }
+// }
+
+// /* 🔥 ONLY Affidi logo larger */
+// .largeLogo {
+//   img {
+//     // width: clamp(160px, 26vw, 230px);
+//     width: clamp(160px, 26vw, 300px);
+//   }
+// }
+
+// /* ANIMATION */
+// .clientBox {
+//   opacity: 0;
+//   transform: translateY(40px) scale(0.95);
+//   transition: opacity 0.6s ease, transform 0.6s ease;
+// }
+
+// .visible {
+//   opacity: 1;
+//   transform: translateY(0) scale(1);
+// }
+//................
+
 .clientsSection {
-  padding: 90px 0;
+  padding: 30px 0;
+  padding-bottom: 15px;
   scroll-margin-top: 100px;
   background: white;
-  // gap:50px;
 }
 
 /* CENTER HEADING */
 .headingWrapper {
   text-align: center;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   display: flex;
   justify-content: center;
 
@@ -114,81 +253,25 @@
 }
 
 /* GRID LAYOUT */
-// .grid {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   gap: 10px;
-//   max-width: 1400px;
-//   margin: 0 auto;
-
-//   /* 7th image centered on desktop */
-//   .lastCenter {
-//     grid-column: 2 / 3;
-//   }
-
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr); // 7 in a row for desktop
   // gap: 20px;
-  max-width: 1400px;
+  max-width: 1350px;
   margin: 0 auto;
+  margin-top:0px;
+  padding-top:0px;
 
-  /* 5th, 6th, 7th items → second row centered */
-  // .clientBox:nth-child(5) {
-  //   grid-column: 2;
-  // }
-
-  // .clientBox:nth-child(6) {
-  //   grid-column: 3;
-  // }
-
-  // .clientBox:nth-child(7) {
-  //   grid-column: 4;
-  // }
-
-
-.clientBox:nth-child(5),
-.clientBox:nth-child(6),
-.clientBox:nth-child(7) {
-  transform: translateX(50%) translateY(40px) scale(0.95);
-}
-
-/* When visible */
-.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* visible + stagger */
-.clientBox:nth-child(5).visible,
-.clientBox:nth-child(6).visible,
-.clientBox:nth-child(7).visible {
-  transform: translateX(50%) translateY(0) scale(1);
-}
-
-
- 
-  @media (max-width: 600px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap:20px;
-
-    .lastCenter {
-      grid-column: auto !important;
-    }
-
-      .grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr); // tablet: 4 in first row
   }
 
-  .clientBox {
-    transform: translateY(40px) scale(0.95) !important;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr); // mobile: same as tablet
   }
 
-  .visible {
-    transform: translateY(0) scale(1) !important;
-  }
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr); // very small screens
   }
 }
 
@@ -211,12 +294,9 @@
   }
 }
 
-/* 🔥 ONLY Affidi logo larger */
-.largeLogo {
-  img {
-    // width: clamp(160px, 26vw, 230px);
-    width: clamp(160px, 26vw, 300px);
-  }
+/* Affidi logo larger */
+.largeLogo img {
+  width: clamp(160px, 26vw, 300px);
 }
 
 /* ANIMATION */
@@ -229,4 +309,11 @@
 .visible {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+
+/* CENTER SECOND ROW FOR TABLET/MOBILE */
+@media (max-width: 1024px) {
+  .grid {
+    justify-content: center; // center the rows
+  }
 }

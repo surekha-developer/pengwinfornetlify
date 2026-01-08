@@ -5,8 +5,10 @@
    HERO SECTION
 ========================= */
 .hero {
-  min-height: 85vh;
-  padding: 4rem 6rem;
+  // max-width: 1450px;
+  min-height: 60vh;
+  padding: 0rem 4rem;
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,8 +16,8 @@
 
   @media (max-width: 900px) {
     flex-direction: column;
-    gap: 3rem;
-    padding: 3rem 2rem;
+    // gap: 3rem;
+    // padding: 3rem 2rem;
   }
 }
 
@@ -23,13 +25,13 @@
    CONTENT
 ========================= */
 .content {
-  max-width: 600px;
+  max-width: 650px;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
   }
 
   p {
@@ -128,19 +130,22 @@
 
 @media (max-width: 1200px) {
   .content {
-     max-width: 450px;
+     max-width: 500px;
   }
 }
+
+
 
 /* =========================
    TABLET (<= 1024px)
 ========================= */
 @media (max-width: 1024px) {
   .hero {
-    padding: 4rem;
+    // padding: 4rem;
     min-height: auto;
     padding-bottom: 80px;
     // gap:50px;
+    padding:20px;
   }
 
   .content {
@@ -175,14 +180,27 @@
 
 }
 
+@media (max-width: 970px) {
+  .content {
+     max-width: 450px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+     max-width: 800px;
+  }
+ 
+}
+
 /* =========================
    MOBILE (<= 600px)
 ========================= */
 @media (max-width: 600px) {
   .hero {
-    padding: 3.5rem 1.5rem;
+    // padding: 3.5rem 1.5rem;
+    padding:20px;
     padding-bottom: 80px;
-    text-align: center;
+    // text-align: center;
   }
 
   .content {
@@ -196,7 +214,7 @@
     p {
       font-size: 0.95rem;
       text-align: left;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
     }
   }
 

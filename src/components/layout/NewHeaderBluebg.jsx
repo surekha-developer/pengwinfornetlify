@@ -10,6 +10,10 @@ import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
+import { GoMail } from "react-icons/go";
+// import { IoIosMail } from "react-icons/io";
+
+
 
 import styles from "../../styles/layout/NewHeaderBluebg.module.scss"; // Header styles
 
@@ -129,13 +133,16 @@ export default function NewHeader() {
 
       {/* Social Icons */}
       <div className={styles.socials}>
-        <a href={socialLinks.whatsapp} target="_blank" rel="noopener noreferrer">
+        {/* <a href={socialLinks.whatsapp} target="_blank" rel="noopener noreferrer">
           <FaWhatsapp />
-        </a>
+        </a> */}
         <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+        <a href="mailto:info@pengwintech.com">
+    <GoMail />
+  </a>
+        {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
         <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
@@ -143,7 +150,7 @@ export default function NewHeader() {
         </a>
         <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
           <FaTwitter />
-        </a>
+        </a> */}
       </div>
 
       {/* Hamburger Menu */}
@@ -293,13 +300,17 @@ export default function NewHeader() {
 
     {/* Mobile Social Icons */}
     <div className={styles.mobileSocials}>
-      <a href={socialLinks.whatsapp} target="_blank" rel="noopener noreferrer">
+      {/* <a href={socialLinks.whatsapp} target="_blank" rel="noopener noreferrer">
         <FaWhatsapp />
-      </a>
+      </a> */}
       <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </a>
-      <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+
+        <a href="mailto:info@pengwintech.com">
+    <GoMail />
+  </a>
+      {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
         <FaInstagram />
       </a>
       <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
@@ -307,7 +318,7 @@ export default function NewHeader() {
       </a>
       <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
         <FaTwitter />
-      </a>
+      </a> */}
     </div>
   </div>
 )}
