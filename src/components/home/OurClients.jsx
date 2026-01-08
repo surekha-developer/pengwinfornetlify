@@ -82,7 +82,7 @@ import styles from "../../styles/homeStyles/OurClients.module.scss";
 
 import headingImg from "../../../public/ourclientsheadingremovebg.png"; 
 import c1 from "../../../public/ourclientimages/yogaland.png";
-import c2 from "../../../public/ourclientimages/sliceflo.jpeg";
+import c2 from "../../../public/ourclientimages/sliceflorbg.png";
 import c3 from "../../../public/ourclientimages/Ramadeus.png";
 import c4 from "../../../public/ourclientimages/magni5.png";
 import c5 from "../../../public/ourclientimages/innovarsity.png";
