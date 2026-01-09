@@ -62,16 +62,7 @@ export default function NewHeader() {
                 Services{" "}
                 {servicesOpen ? <MdOutlineArrowDropUp size={20} /> : <MdOutlineArrowDropDown size={20} />}
               </button>
-              {/* <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.show : ""}`}>
-                <Link href="/services">View All Services</Link>
-                <Link href="/services/digital-transformation">Digital Transformation</Link>
-                <Link href="/services/middleware-integrations">Middleware Integrations</Link>
-                <Link href="/services/software-consulting">Software Consulting</Link>
-                <Link href="/services/cloud-services">Cloud Services</Link>
-                <Link href="/services/staff-augmentation">Staff Augmentation</Link>
-                <Link href="/services/iot-solutions">IoT Solutions</Link>
-                <Link href="/services/no-code-low-code">No Code / Low Code</Link>
-              </div> */}
+             
 <div className={`${styles.dropdownMenu} ${servicesOpen ? styles.show : ""}`}>
   <Link href="/services" className={styles.dropdownItem}>
     <span>View All Services</span>
@@ -113,10 +104,7 @@ export default function NewHeader() {
     <GoArrowUpRight />
   </Link>
 
-  {/* <Link href="/services" className={styles.dropdownItem}>
-    <span>View All Services</span>
-    <GoArrowUpRight />
-  </Link> */}
+ 
 </div>
 
 
@@ -144,15 +132,7 @@ export default function NewHeader() {
         <a href="mailto:info@pengwintech.com">
     <GoMail />
   </a>
-        {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </a>
-        <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
-          <FaFacebook />
-        </a>
-        <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </a> */}
+       
       </div>
 
       {/* Hamburger Menu */}
@@ -258,6 +238,7 @@ export default function NewHeader() {
               </Link>
                 <Link href="/services/digital-transformation" className={styles.dropdownItem}>
                 <span>Digital Transformation</span>
+                <GoArrowUpRight />
               </Link>
             
               <Link href="/services/middleware-integrations" className={styles.dropdownItem}>
@@ -312,15 +293,7 @@ export default function NewHeader() {
         <a href="mailto:info@pengwintech.com">
     <GoMail />
   </a>
-      {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
-        <FaInstagram />
-      </a>
-      <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
-        <FaFacebook />
-      </a>
-      <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-        <FaTwitter />
-      </a> */}
+  
     </div>
   </div>
 )}
@@ -330,3 +303,6 @@ export default function NewHeader() {
     </header>
   );
 }
+//......................
+
+
