@@ -94,7 +94,7 @@ export default function NewAboutHome() {
             {[
               { src: "/homecaro3.jpg", alt: "Our Mission", link: "/about", label: "Our Mission" },
               { src: "/vision.jpg", alt: "Our Vision", link: "/about", label: "Our Vision" },
-              { src: "/homecaro2.jpg", alt: "Our Team", link: "/about", label: "Our Team" },
+              { src: "/homecaro2.jpg", alt: "Our Team", link: "/about", label: "How We Work" },
               { src: "/getinTouchHome.jpg", alt: "Get in Touch", link: "/contact", label: "Get in Touch" },
             ].map((item, index) => (
               <motion.div
