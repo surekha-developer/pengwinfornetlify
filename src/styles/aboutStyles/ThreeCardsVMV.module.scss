@@ -19,7 +19,7 @@
 .card {
   background: #fff;
   padding: 32px 24px;
-  border-radius: 16px;
+  // border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -32,7 +32,7 @@
     font-size: 1.6rem;
     font-weight: 550;
     margin-bottom: 14px;
-     color: #2ecc71;
+     color: #1f2b6c;
   }
 
   p {
@@ -70,7 +70,7 @@
   color: #444;
 
   .tic {
-    color: #2ecc71;
+    color: #1f2b6c;
     font-size: 0.5rem;
 
     /* 🔥 KEY FIX */
