@@ -2,7 +2,7 @@
 
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -16,6 +16,7 @@ import { GoMail } from "react-icons/go";
 
 
 import styles from "../../styles/layout/NewHeaderBluebg.module.scss"; // Header styles
+import Image from "next/image";
 
 export default function NewHeader() {
   const pathname = usePathname();
@@ -44,7 +45,7 @@ export default function NewHeader() {
       {/* Logo */}
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="public/imageswebp/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
+          <Image src="/imageswebp/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
         </Link>
       </div>
 
