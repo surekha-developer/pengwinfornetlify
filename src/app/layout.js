@@ -63,8 +63,7 @@ import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Loader from "@/components/Loader";
 import CustomCursor from "@/components/CustomCursor/CustomCursor";
-import ScrollToTop from "@/components/ScrollTop";
-import WhatsAppButton from "@/components/Wtsapp";
+
 import Twobuttons from "@/components/Twobuttons";
 import RouteScrollReset from "@/components/RouteScrollReset";
 
@@ -101,8 +100,7 @@ export default function RootLayout({ children }) {
         <CustomCursor/>
         {loading && <Loader />}
         {!loading && children}
-        {/* <ScrollToTop />
-         <WhatsAppButton /> */}
+        
          <RouteScrollReset />
          <Twobuttons/>
       </body>

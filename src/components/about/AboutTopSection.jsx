@@ -87,7 +87,7 @@ import Image from "next/image";
 
 import styles from "../../styles/aboutStyles/AboutTopSection.module.scss";
 import { FaHandshake, FaCheckCircle, FaUsers } from "react-icons/fa";
-import SectionHeader from "../SectionHeader/SectionHeader";
+// import SectionHeader from "../SectionHeader/SectionHeader";
 import { useEffect } from "react";
 
 export default function AboutTopSection() {
@@ -171,7 +171,7 @@ useEffect(() => {
         {/* RIGHT IMAGE */}
         <div className={styles.imageBox}>
           <Image
-            src="/homecaro2.jpg"
+            src="/imageswebp/homecaro2.webp"
             alt="How We Work"
             fill
             priority

@@ -2,18 +2,27 @@
   position: relative;
   width: 100%;
   min-height: 80vh;
-  background-image: url("/whoweareNew.jpg");
+  background-image: url("/imageswebp/whoweareNew.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
+/* ✅ SAFE OVERLAY */
+.whoSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
 
 .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
+  pointer-events: none;
 }
 
 .container {
@@ -95,6 +104,11 @@
     transform: translateY(-2px);
     color:white;
   }
+}
+
+.btn {
+  position: relative;
+  z-index: 5;
 }
 
 /* ================= MOBILE ================= */

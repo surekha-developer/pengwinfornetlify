@@ -1,131 +1,3 @@
-// // body{
-// //     padding-top:0px;
-// // }
-
-
-// .howWeWork {
-//   padding: 50px 20px;
-//   padding-bottom:60px;
-//   background: #ffffff;
-// }
-
-
-// .topContent {
-//   max-width: 750px;
-//   margin: 0 auto 0px;
-//   margin-bottom:50px;
-//   text-align: center;
-
-//   h2 {
-//     font-size: 38px;
-//     font-weight: 700;
-//     color: #1f2b6c;
-//     margin-bottom: 15px;
-//   }
-
-//   p {
-//     font-size: 16px;
-//     line-height: 1.8;
-//     color: #666;
-//   }
-// }
-// .container {
-//   max-width: 1220px;
-//   margin: auto;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   align-items: center;
-//   gap: 80px;
-// }
-
-// /* ======================
-//    LEFT CONTENT
-// ====================== */
-// .content {
-//   h2 {
-//     font-size: 36px;
-//     font-weight: 700;
-//     color: #1f2b6c;
-//     margin-bottom: 40px;
-//   }
-// }
-
-// .item {
-//   display: flex;
-//   gap: 20px;
-//   margin-bottom: 30px;
-
-//   h4 {
-//     font-size: 20px;
-//     font-weight: 600;
-//     color: #1f2b6c;
-//     margin-bottom: 8px;
-//   }
-
-//   p {
-//     font-size: 15px;
-//     line-height: 1.7;
-//     color: #555;
-//   }
-// }
-
-// .icon {
-//   font-size: 35px;
-//   color: #1f2b6c;
-//   min-width: 40px;
-//   margin-bottom: 0px;
-// }
-
-// /* ======================
-//    IMAGE
-// ====================== */
-// .imageBox {
-//   position: relative;
-//   width: 100%;
-//   height: 420px;
-
-//   img {
-//     object-fit: cover;
-//     // border-radius: 4px;
-//   }
-// }
-
-// /* ======================
-//    TABLET (SAME AS DESKTOP)
-// ====================== */
-// @media (max-width: 1024px) {
-//   .container {
-//     grid-template-columns: 1fr 1fr;
-//     gap: 50px;
-//   }
-// }
-
-// /* ======================
-//    MOBILE (IMAGE TOP)
-// ====================== */
-// @media (max-width: 768px) {
-//   .container {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .imageBox {
-//     order: 1;
-//     height: 260px;
-//   }
-
-//   .content {
-//     order: 2;
-
-//     h2 {
-//       font-size: 30px;
-//     }
-//   }
-// }
-//....................
-
-// body{
-//     padding-top:0px;
-// }
 
 
 .howWeWork {
@@ -155,17 +27,7 @@
   }
 }
 
-// .typing {
-//   width: fit-content;
-//   margin: 0 auto 15px;
-//   overflow: hidden;
-//   white-space: nowrap;
-//   border-right: 3px solid #1f2b6c;
-//   animation:
-//     typing 2.2s steps(8, end),
-//     // blink 0.8s infinite;
-    
-// }
+
 
 .typing {
   width: fit-content;
@@ -173,16 +35,10 @@
   overflow: hidden;
   white-space: nowrap;
 
-  animation: typing 2.2s steps(8, end);
+  animation: typing 1s steps(8, end);
 }
 
-// .cursor {
-//   // display: inline-block;
-//     display: none;
-//   margin-left: 2px;
-//   animation: blink 1s infinite;
-//   color: #0e2a5c;
-// }
+
 
 @keyframes typing {
   from { width: 0 }
@@ -196,7 +52,7 @@
   opacity: 0;
   transform: translateY(30px);
   animation: wipeUp 1.2s ease forwards;
-  animation-delay: 2.3s; // after typing finishes
+  animation-delay: 1s; // after typing finishes
 }
 
 @keyframes wipeUp {

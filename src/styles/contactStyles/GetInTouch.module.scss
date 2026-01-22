@@ -1,402 +1,4 @@
-// .contactForm {
-//   background: #f9f9f9;
-//   padding: 30px;
-//   border-radius: 16px;
-//   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
 
-//   .field {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 6px;
-
-//     input,
-//     textarea {
-//       padding: 12px;
-//       border-radius: 8px;
-//       border: 1px solid #ccc;
-//       font-size: 15px;
-
-//       &:focus {
-//         outline: none;
-//         border-color: #0070f3;
-//       }
-//     }
-
-//     small {
-//       font-size: 12px;
-//       color: #777;
-//     }
-//   }
-
-//   button {
-//     margin-top: 10px;
-//     padding: 14px;
-//     border-radius: 10px;
-//     border: none;
-//     font-size: 16px;
-//     background: #0070f3;
-//     color: #fff;
-//     cursor: pointer;
-//     transition: background 0.3s;
-
-//     &:hover {
-//       background: #005bb5;
-//     }
-
-//     &:disabled {
-//       background: #999;
-//       cursor: not-allowed;
-//     }
-//   }
-// }
-
-
-// .status {
-//   text-align: center;
-//   margin-top: 10px;
-//   font-weight: 600;
-//   color: green;
-// }
-
-// /* ✅ Responsive */
-// @media (max-width: 768px) {
-//   .contactSection {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .left {
-//     display: none;
-//   }
-// }
-//.....................
-
-// .contactSection {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   // gap: 40px;
-//   padding: 100px 100px;
-
-//   .left {
-//     flex: 1;
-//     img {
-//       width: 70%;
-//       border-radius: 16px;
-//       object-fit: cover;
-//     }
-//   }
-
-//   .right {
-//     flex: 1;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 20px;
-
-//     h2 {
-//       font-size: 32px;
-//       margin-bottom: 20px;
-//       text-align: left;
-//     }
-//   }
-// }
-
-// .contactForm {
-//   background: #f9f9f9;
-//   padding: 30px;
-//   border-radius: 16px;
-//   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-
-//   .field {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 6px;
-
-//     input,
-//     textarea {
-//       padding: 12px;
-//       border-radius: 8px;
-//       border: 1px solid #ccc;
-//       font-size: 15px;
-
-//       &:focus {
-//         outline: none;
-//         border-color: #0070f3;
-//       }
-//     }
-
-//     small {
-//       font-size: 12px;
-//       color: #777;
-//     }
-//   }
-
-//   button {
-//     margin-top: 10px;
-//     padding: 14px;
-//     border-radius: 10px;
-//     border: none;
-//     font-size: 16px;
-//     background: #0070f3;
-//     color: #fff;
-//     cursor: pointer;
-//     transition: background 0.3s;
-
-//     &:hover {
-//       background: #005bb5;
-//     }
-
-//     &:disabled {
-//       background: #999;
-//       cursor: not-allowed;
-//     }
-//   }
-// }
-
-// .status {
-//   text-align: center;
-//   margin-top: 10px;
-//   font-weight: 600;
-//   color: green;
-// }
-
-// /* Responsive */
-// @media (max-width: 1024px) {
-//   .contactSection {
-//     gap: 30px;
-//     padding: 40px 20px;
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .contactSection {
-//     flex-direction: column;
-//     align-items: center;
-//     text-align: center;
-
-//     .left {
-//       width: 80%;
-//       margin-bottom: 20px;
-//     }
-
-//     .right {
-//       width: 100%;
-
-//       h2 {
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .contactForm {
-//     padding: 20px;
-
-//     button {
-//       padding: 12px;
-//       font-size: 14px;
-//     }
-//   }
-// }
-//.....................
-
-// .contactSection {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center; // change from space-between
-//   gap: 20px; // controls space between image and form
-//   padding: 60px 60px; // reduce padding from 100px
-
-//   .left {
-//     flex: 1;
-//     img {
-//       width: 100%; // take full flex width
-//       max-width: 550px; // optional: limits huge image on desktop
-//       // border-radius: 50%;
-//       object-fit: cover;
-//       display: block;
-//       margin: 0 auto; // center inside flex
-//     }
-//   }
-
-//   .right {
-//     flex: 1;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 20px;
-
-//    .typing {
-//   font-size: 32px;
-//   font-weight: 700;
-//   width: fit-content;
-//   white-space: nowrap;
-//   overflow: hidden;
-
-//   animation: typing 2.2s steps(14, end);
-// }
-
-// /* Typing animation */
-// @keyframes typing {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
-
-// /* Small text under heading */
-// .subText {
-//   font-size: 15px;
-//   color: #555;
-//   line-height: 1.6;
-//   max-width: 480px;
-// }
-
-//   }
-// }
-
-// .contactForm {
-//   // background: #f9f9f9;
-//   padding: 30px;
-//   // border-radius: 16px;
-//   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
-//   display: flex;
-//   flex-direction: column;
-//   gap: 16px;
-
-//   .field {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 6px;
-
-//     input,
-//     textarea {
-//       padding: 12px;
-//       border-radius: 8px;
-//       border: 1px solid #ccc;
-//       font-size: 15px;
-
-//       &:focus {
-//         outline: none;
-//         border-color: #102844;
-//       }
-//     }
-
-//     small {
-//       font-size: 12px;
-//       color: #777;
-//     }
-//   }
-
-//   button {
-//     margin-top: 10px;
-//     padding: 14px;
-//     border-radius: 10px;
-//     border: none;
-//     font-size: 16px;
-//     background: #102844;
-//     color: #fff;
-//     cursor: pointer;
-//     transition: background 0.3s;
-
-//     &:hover {
-//       background: #005bb5;
-//     }
-
-//     &:disabled {
-//       background: #999;
-//       cursor: not-allowed;
-//     }
-//   }
-// }
-
-// .status {
-//   text-align: center;
-//   margin-top: 10px;
-//   font-weight: 600;
-//   color: green;
-// }
-
-// /* Responsive */
-// @media (max-width: 1024px) {
-//   .contactSection {
-//     gap: 30px;
-//     padding: 20px 20px;
-//   }
-// }
-
-// // @media (max-width: 768px) {
-// //   .contactSection {
-// //     flex-direction: column;
-// //     align-items: center;
-// //     text-align: center;
-
-// //     .left {
-// //       width: 60%;
-// //       margin-bottom: 20px;
-// //     }
-
-// //     .right {
-// //       width: 100%;
-
-// //       h2 {
-// //         text-align: center;
-// //       }
-// //       typing{
-// //         text-align: center;
-// //       }
-// //     }
-// //   }
-// // }
-
-
-// @media (max-width: 768px) {
-//   .contactSection {
-//     flex-direction: column;
-//     align-items: center;
-//     text-align: center;
-
-//     .left {
-//       width: 60%;
-//       margin-bottom: 20px;
-//     }
-
-//     .right {
-//       width: 100%;
-//       // align-items: center; // ✅ center children
-
-//       .typing {
-//         margin: 0 auto;     // ✅ center heading
-//         text-align: center;
-//       }
-
-//       .subText {
-//         margin: 0 auto;     // ✅ center paragraph
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
-
-
-// @media (max-width: 480px) {
-//   .contactForm {
-//     padding: 20px;
-
-//     button {
-//       padding: 12px;
-//       font-size: 14px;
-//     }
-//   }
-// }
-//................
 
 
 .contactSection {
@@ -429,7 +31,7 @@
     gap: 10px;
 
     .typing {
-      font-size: 32px;
+      font-size: 22px;
       font-weight: 600;
       width: fit-content;
       white-space: nowrap;
@@ -561,3 +163,300 @@
     }
   }
 }
+
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageStack {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+/* MAIN IMAGE */
+.mainImage {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+/* EXPERIENCE BADGE */
+.experienceBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #0b1e46;
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+
+  .years {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}
+
+/* OVERLAPPING IMAGE */
+.overlayImage {
+  position: absolute;
+  bottom: -80px;
+  left: -60px;
+  width: 75%;
+  border-radius: 18px;
+  border: 8px solid #fff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* SMART CARD */
+.smartCard {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #0b1e46;
+  color: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  width: 220px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+
+  p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  small {
+    font-size: 13px;
+    opacity: 0.85;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .imageStack {
+    max-width: 90%;
+  }
+
+  .overlayImage {
+    display: none; // hide overlap image on mobile
+  }
+
+  .experienceBadge,
+  .smartCard {
+    transform: scale(0.9);
+  }
+}
+//................
+
+// .contactSection {
+//   display: flex;
+//   align-items: stretch; // ✅ equal height
+//   gap: 20px;
+//   padding: 60px;
+// }
+
+// /* LEFT & RIGHT */
+// .left,
+// .right {
+//   flex: 1;
+// }
+
+// /* LEFT */
+// .left {
+//   display: flex;
+//   justify-content: center;
+//   align-items: stretch;
+// }
+
+// /* IMAGE STACK */
+// .imageStack {
+//   position: relative;
+//   width: 100%;
+//   max-width: 520px;
+//   height: 100%;
+//   display: flex;
+// }
+
+// /* MAIN IMAGE */
+// .mainImage {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   border-radius: 0px;
+// }
+
+// /* EXPERIENCE BADGE */
+// .experienceBadge {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   background: #0b1e46;
+//   color: #fff;
+//   border-radius: 14px;
+//   padding: 14px 18px;
+//   display: flex;
+//   align-items: center;
+//   gap: 12px;
+//   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+//   z-index: 3;
+// }
+
+// .years {
+//   font-size: 28px;
+//   font-weight: 700;
+// }
+
+// .text {
+//   font-size: 13px;
+//   line-height: 1.2;
+// }
+
+// /* OVERLAP IMAGE */
+// .overlayImage {
+//   position: absolute;
+//   bottom: -60px;
+//   left: -40px;
+//   width: 75%;
+//   border-radius: 18px;
+//   border: 8px solid #fff;
+//   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+//   z-index: 2;
+// }
+
+// /* SMART CARD */
+// .smartCard {
+//   position: absolute;
+//   bottom: 20px;
+//   right: 20px;
+//   background: #0b1e46;
+//   color: #fff;
+//   border-radius: 16px;
+//   padding: 18px;
+//   width: 220px;
+//   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+//   z-index: 3;
+
+//   p {
+//     font-size: 16px;
+//     font-weight: 600;
+//   }
+
+//   small {
+//     font-size: 13px;
+//     opacity: 0.85;
+//   }
+// }
+
+// /* RIGHT */
+// .right {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+// }
+
+// /* TEXT */
+// .typing {
+//   font-size: 32px;
+//   font-weight: 600;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   animation: typing 2.2s steps(14, end);
+//   font-style: italic;
+// }
+
+// .subText {
+//   font-size: 15px;
+//   color: #555;
+//   line-height: 1.6;
+//   max-width: 480px;
+// }
+
+// /* FORM */
+// .contactForm {
+//   padding: 30px;
+//   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+// }
+
+// .field input,
+// .field textarea {
+//   padding: 12px;
+//   border-radius: 8px;
+//   border: 1px solid #ccc;
+//   font-size: 15px;
+// }
+
+// // button {
+// //   padding: 14px;
+// //   border-radius: 10px;
+// //   background: #102844;
+// //   color: #fff;
+// //   border: none;
+// //   cursor: pointer;
+// // }
+// .submitButton {
+//   margin-top: 10px;
+//   padding: 14px;
+//   border-radius: 10px;
+//   border: none;
+//   font-size: 16px;
+//   background: #102844;
+//   color: #fff;
+//   cursor: pointer;
+//   transition: background 0.3s;
+
+//   &:hover {
+//     background: #005bb5;
+//   }
+
+//   &:disabled {
+//     background: #999;
+//     cursor: not-allowed;
+//   }
+// }
+
+
+// .status {
+//   text-align: center;
+//   font-weight: 600;
+//   color: green;
+// }
+
+// /* ANIMATION */
+// @keyframes typing {
+//   from { width: 0; }
+//   to { width: 100%; }
+// }
+
+// /* RESPONSIVE */
+// @media (max-width: 768px) {
+//   .contactSection {
+//     flex-direction: column;
+//   }
+
+//   .imageStack {
+//     height: auto;
+//   }
+
+//   .overlayImage {
+//     display: none;
+//   }
+// }

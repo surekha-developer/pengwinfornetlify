@@ -125,7 +125,7 @@ export default function EmpoweringSection() {
   return (
     <section ref={sectionRef} className={styles.empoweringSection}>
       <Image
-        src="/empower2.jpg"
+        src="/imageswebp/empower2.webp"
         alt="Empowering Digital Transformation"
         fill
         priority

@@ -1,4 +1,4 @@
-import IoTHero from "@/components/home/IoTHero";
+
 import OurClients from "@/components/home/OurClients";
 
 import NewFooter from "@/components/layout/NewFooter";
@@ -15,7 +15,7 @@ export default function ServicesIOT() {
 
 <NewHeader/>
 
-{/* <IoTHero/> */}
+
 
 < IoTThree/>
 

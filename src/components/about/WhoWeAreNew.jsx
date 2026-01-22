@@ -4,6 +4,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import styles from "@/styles/aboutStyles/WhoWeAreNew.module.scss";
+import Link from "next/link";
 
 export default function WhoWeAreNew() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,7 +34,7 @@ export default function WhoWeAreNew() {
 
   return (
     <section ref={sectionRef} className={styles.whoSection}>
-      <div className={styles.overlay}></div>
+      {/* <div className={styles.overlay}></div> */}
 
       <div className={styles.container}>
         <div className={styles.content}>
@@ -56,9 +57,9 @@ export default function WhoWeAreNew() {
             world.
           </p>
 
-          <a href="/about" className={styles.btn}>
+          {/* <Link href="/about" className={styles.btn}>
             Learn More
-          </a>
+          </Link> */}
         </div>
       </div>
     </section>

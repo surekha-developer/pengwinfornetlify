@@ -4,7 +4,7 @@ import NewFooter from "@/components/layout/NewFooter";
 import NewHeader from "@/components/layout/NewHeaderBluebg";
 
 import LowCodeThree from "@/components/services/LowCodeThree";
-import NoCodeHero from "@/components/services/NoCodeHero";
+
 import WouldConnect from "@/components/services/WouldConnect";
 
 export default function ServicesNoCode() {
@@ -15,7 +15,7 @@ export default function ServicesNoCode() {
 
 <NewHeader/>
 
-{/* <NoCodeHero/> */}
+
 
 <LowCodeThree/>
 <WouldConnect/>

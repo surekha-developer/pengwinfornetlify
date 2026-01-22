@@ -8,10 +8,10 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { FiMenu, FiX } from "react-icons/fi";
+// import { FiMenu, FiX } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
 import { GoMail } from "react-icons/go";
-// import { IoIosMail } from "react-icons/io";
+
 
 
 
@@ -44,7 +44,7 @@ export default function NewHeader() {
       {/* Logo */}
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
+          <Image src="/imageswebp/nobgwhitemainlogo.png" alt="Logo" width={200} height={45} />
         </Link>
       </div>
 

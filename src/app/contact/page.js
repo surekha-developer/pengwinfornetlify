@@ -1,5 +1,4 @@
 
-import ContactHero from "@/components/contactus/ContactHeroSection";
 import GetInTouch from "@/components/contactus/GetInTouch";
 import GoogleMap from "@/components/contactus/GoogleMaps";
 
@@ -13,7 +12,7 @@ export default function ContactPage() {
   <>
 
 <NewHeader/>
-{/* <ContactHero/> */}
+
 
 <GetInTouch/>
   <GoogleMap/>

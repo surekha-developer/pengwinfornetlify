@@ -92,10 +92,10 @@ export default function NewAboutHome() {
         >
           <div className={styles.grid}>
             {[
-              { src: "/homecaro3.jpg", alt: "Our Mission", link: "/about", label: "Our Mission" },
-              { src: "/vision.jpg", alt: "Our Vision", link: "/about", label: "Our Vision" },
-              { src: "/homecaro2.jpg", alt: "Our Team", link: "/about", label: "How We Work" },
-              { src: "/getinTouchHome.jpg", alt: "Get in Touch", link: "/contact", label: "Get in Touch" },
+              { src: "/imageswebp/homecaro3.webp", alt: "Our Mission", link: "/about", label: "Our Mission" },
+              { src: "/imageswebp/vision.webp", alt: "Our Vision", link: "/about", label: "Our Vision" },
+              { src: "/imageswebp/homecaro2.webp", alt: "Our Team", link: "/about", label: "How We Work" },
+              { src: "/imageswebp/getinTouchHome.webp", alt: "Get in Touch", link: "/contact", label: "Get in Touch" },
             ].map((item, index) => (
               <motion.div
                 key={index}

@@ -10,21 +10,21 @@ import Link from "next/link";
 const blogs = [
   {
     id: 1,
-    image: "/digi.jpg",
+    image: "/imageswebp/digi.webp",
     date: "Digital Transformation",
     title:
       "We help businesses modernize processes and deliver seamless, innovative digital experiences",
   },
   {
     id: 2,
-    image: "/digit3.jpg",
+    image: "/imageswebp/digit3.webp",
     date: "MiddleWare Integrations",
     title:
       "We help businesses seamlessly connect multiple software systems for smooth operations",
   },
   {
     id: 3,
-    image: "/digi2.jpg",
+    image: "/imageswebp/digi2.webp",
     date: "Software Consulting",
     title:
       "Analyze your current IT infrastructure and identify growth opportunities",

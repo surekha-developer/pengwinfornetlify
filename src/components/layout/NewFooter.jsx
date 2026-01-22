@@ -239,7 +239,7 @@ export default function NewFooter() {
         {/* ================= MAIN ================= */}
         <div className={styles.main}>
           <motion.div className={styles.company} variants={fadeUp}>
-            <img src="/nobgwhitemainlogo.png" alt="Pengwin Tech" />
+            <img src="/imageswebp/nobgwhitemainlogo.png" alt="Pengwin Tech" />
             <p>
               Our skilled team at Pengwin Tech Solutions ensures complete client
               satisfaction by delivering high-quality solutions and providing
