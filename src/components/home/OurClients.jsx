@@ -50,7 +50,8 @@ export default function OurClients() {
     <section id="clients" className={styles.clientsSection}>
 
       <div className={styles.headingWrapper}>
-        <Image src={headingImg} alt="Our Clients" className={styles.headingImg} />
+        <Image src={headingImg} alt="Our Clients" className={styles.headingImg}  width={320}
+  height={120}/>
       </div>
 
       <div className={styles.grid}>
@@ -67,7 +68,13 @@ export default function OurClients() {
             `}
             style={{ transitionDelay: `${idx * 0.15}s` }}
           >
-            <Image src={img} alt={`Client ${idx + 1}`} />
+            <Image
+  src={img}
+  alt={`Client ${idx + 1}`}
+  width={250}
+  height={100}
+/>
+
           </div>
         ))}
       </div>
