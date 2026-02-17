@@ -3,7 +3,7 @@
 export const metadata = {
   title: {
     default: "Pengwin Tech Solutions",
-    template: "%s | Pengwin Technologies",
+    template: "%s | Pengwin Tech Solutions",
   },
   description: "Driven by Passion. Powered with Vision.",
 };
