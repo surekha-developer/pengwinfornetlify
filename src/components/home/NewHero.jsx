@@ -58,7 +58,7 @@ export default function NewHeroSection() {
         <div className={styles.cards}>
           <div
             className={styles.card}
-            style={{ backgroundImage: "url('/modern-apps.jpg')" }}
+            
             onClick={() =>
               window.location.href = "/services/digital-transformation"
             }
@@ -74,7 +74,7 @@ export default function NewHeroSection() {
 
           <div
             className={styles.card}
-            style={{ backgroundImage: "url('/modern-apps.jpg')" }}
+            
             onClick={() => window.location.href = "/services/modern-apps"}
           >
             <h3>Modern Apps</h3>
@@ -88,7 +88,7 @@ export default function NewHeroSection() {
 
           <div
             className={styles.card}
-            style={{ backgroundImage: "url('/product-engineering.jpg')" }}
+          
             onClick={() => window.location.href = "/services/product-engineering"}
           >
             <h3>Product Engineering</h3>
