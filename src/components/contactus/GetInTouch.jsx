@@ -34,6 +34,7 @@ export default function GetInTouch() {
       });
 
       const result = await response.json();
+      //juygtyfvtygvb
 
       if (result.success) {
         setStatus("Message sent successfully ✅");
